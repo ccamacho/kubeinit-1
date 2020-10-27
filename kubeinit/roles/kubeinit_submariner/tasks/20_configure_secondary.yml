@@ -34,7 +34,7 @@
     export PATH=$PATH:~/.local/bin
     cp ~/kube_config_cluster.yml ~/kubeconfig_rke
     subctl join --kubeconfig ~/kubeconfig_rke ./broker-info.subm --servicecidr 10.43.0.0/16 --version dev --no-label --disable-nat
-    # subctl verify ~/kubeconfig_okd ~/kubeconfig_rke --verbose
+    ## subctl verify ~/kubeconfig_okd ~/kubeconfig_rke --verbose
   args:
     executable: /bin/bash
   register: join_cluster
