@@ -145,7 +145,7 @@
       changed_when: "local_initiator_ip.rc == 0"
 
     - name: Set up the local IP
-      ansible.builtin.set_fact:
+      set_fact:
         kubeinit_libvirt_initiator_ip={{ local_initiator_ip.stdout }}
 
     - name: clean bastion config
