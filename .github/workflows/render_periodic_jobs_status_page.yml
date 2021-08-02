@@ -7,7 +7,7 @@ on:
       - main
 jobs:
   render_render_periodic_jobs_status_page:
-    if: github.repository_owner == 'Kubeinit'
+    # if: github.repository_owner == 'Kubeinit'
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
