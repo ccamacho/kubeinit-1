@@ -1,515 +1,515 @@
 digraph {
 	graph [concentrate=true ordering=in rankdir=LR ratio=fill]
 	edge [esep=5 sep=10]
-	"kubeinit/playbook.yml" [URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" id=playbook_9de0e457 style=dotted]
-	"kubeinit/playbook.yml" -> play_c5347254 [label="1 Play: Perform initial setup on ansible-controller host (localhost) (1)" color="#31919b" fontcolor="#31919b" id=edge_play_c5347254 labeltooltip="1 Play: Perform initial setup on ansible-controller host (localhost) (1)" tooltip="1 Play: Perform initial setup on ansible-controller host (localhost) (1)"]
+	"kubeinit/playbook.yml" [URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" id=playbook_b168eda5 style=dotted]
+	"kubeinit/playbook.yml" -> play_5b7e9b19 [label="1 Play: Perform initial setup on ansible-controller host (localhost) (1)" color="#5a4389" fontcolor="#5a4389" id=edge_play_5b7e9b19 labeltooltip="1 Play: Perform initial setup on ansible-controller host (localhost) (1)" tooltip="1 Play: Perform initial setup on ansible-controller host (localhost) (1)"]
 	subgraph "Play: Perform initial setup on ansible-controller host (localhost) (1)" {
-		play_c5347254 [label="Play: Perform initial setup on ansible-controller host (localhost) (1)" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#31919b" fontcolor="#ffffff" id=play_c5347254 shape=box style=filled tooltip=localhost]
-		play_c5347254 -> block_350ec4b5 [label=1 color="#31919b" fontcolor="#31919b" id=edge_block_350ec4b5 labeltooltip=1 tooltip=1]
-		subgraph cluster_block_350ec4b5 {
-			block_350ec4b5 [label="[block] Determine which hypervisor hosts will be used in this deployment" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#31919b" id=block_350ec4b5 labeltooltip="Determine which hypervisor hosts will be used in this deployment" shape=box tooltip="Determine which hypervisor hosts will be used in this deployment"]
-			block_350ec4b5 -> role_6bda2377 [label="1 " color="#31919b" fontcolor="#31919b" id=edge_role_6bda2377 labeltooltip="1 " tooltip="1 "]
+		play_5b7e9b19 [label="Play: Perform initial setup on ansible-controller host (localhost) (1)" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#5a4389" fontcolor="#ffffff" id=play_5b7e9b19 shape=box style=filled tooltip=localhost]
+		play_5b7e9b19 -> block_5fc2a1c3 [label=1 color="#5a4389" fontcolor="#5a4389" id=edge_block_5fc2a1c3 labeltooltip=1 tooltip=1]
+		subgraph cluster_block_5fc2a1c3 {
+			block_5fc2a1c3 [label="[block] Determine which hypervisor hosts will be used in this deployment" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#5a4389" id=block_5fc2a1c3 labeltooltip="Determine which hypervisor hosts will be used in this deployment" shape=box tooltip="Determine which hypervisor hosts will be used in this deployment"]
+			block_5fc2a1c3 -> role_9f7eccad [label="1 " color="#5a4389" fontcolor="#5a4389" id=edge_role_9f7eccad labeltooltip="1 " tooltip="1 "]
 			subgraph "task-gather-facts" {
-				role_6bda2377 [label="[role] task-gather-facts" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#31919b" id=role_6bda2377 tooltip="task-gather-facts"]
-				role_6bda2377 -> role_dc796889 [label="1 " color="#31919b" fontcolor="#31919b" id=edge_role_dc796889 labeltooltip="1 " tooltip="1 "]
+				role_9f7eccad [label="[role] task-gather-facts" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#5a4389" id=role_9f7eccad tooltip="task-gather-facts"]
+				role_9f7eccad -> role_c3b05562 [label="1 " color="#5a4389" fontcolor="#5a4389" id=edge_role_c3b05562 labeltooltip="1 " tooltip="1 "]
 				subgraph "Gather kubeinit secrets" {
-					role_dc796889 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/build_hypervisors_group.yml" color="#31919b" id=role_dc796889 tooltip="Gather kubeinit secrets"]
+					role_c3b05562 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/build_hypervisors_group.yml" color="#5a4389" id=role_c3b05562 tooltip="Gather kubeinit secrets"]
 				}
-				role_6bda2377 -> role_24be516a [label="2 " color="#31919b" fontcolor="#31919b" id=edge_role_24be516a labeltooltip="2 " tooltip="2 "]
+				role_9f7eccad -> role_c8e7cf03 [label="2 " color="#5a4389" fontcolor="#5a4389" id=edge_role_c8e7cf03 labeltooltip="2 " tooltip="2 "]
 				subgraph "Gather additional facts from localhost for kubeinit" {
-					role_24be516a [label="[role] Gather additional facts from localhost for kubeinit" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/build_hypervisors_group.yml" color="#31919b" id=role_24be516a tooltip="Gather additional facts from localhost for kubeinit"]
+					role_c8e7cf03 [label="[role] Gather additional facts from localhost for kubeinit" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/build_hypervisors_group.yml" color="#5a4389" id=role_c8e7cf03 tooltip="Gather additional facts from localhost for kubeinit"]
 				}
-				role_6bda2377 -> role_c0042f24 [label="3 " color="#31919b" fontcolor="#31919b" id=edge_role_c0042f24 labeltooltip="3 " tooltip="3 "]
+				role_9f7eccad -> role_f44a736d [label="3 " color="#5a4389" fontcolor="#5a4389" id=edge_role_f44a736d labeltooltip="3 " tooltip="3 "]
 				subgraph "Create ssh config file from template" {
-					role_c0042f24 [label="[role] Create ssh config file from template" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/build_hypervisors_group.yml" color="#31919b" id=role_c0042f24 tooltip="Create ssh config file from template"]
+					role_f44a736d [label="[role] Create ssh config file from template" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/build_hypervisors_group.yml" color="#5a4389" id=role_f44a736d tooltip="Create ssh config file from template"]
 				}
 			}
 		}
 	}
-	"kubeinit/playbook.yml" -> play_c540ac94 [label="2 Play: Gather facts from the cluster hypervisor hosts (0)" color="#18b470" fontcolor="#18b470" id=edge_play_c540ac94 labeltooltip="2 Play: Gather facts from the cluster hypervisor hosts (0)" tooltip="2 Play: Gather facts from the cluster hypervisor hosts (0)"]
+	"kubeinit/playbook.yml" -> play_28800079 [label="2 Play: Gather facts from the cluster hypervisor hosts (0)" color="#4d7f70" fontcolor="#4d7f70" id=edge_play_28800079 labeltooltip="2 Play: Gather facts from the cluster hypervisor hosts (0)" tooltip="2 Play: Gather facts from the cluster hypervisor hosts (0)"]
 	subgraph "Play: Gather facts from the cluster hypervisor hosts (0)" {
-		play_c540ac94 [label="Play: Gather facts from the cluster hypervisor hosts (0)" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#18b470" fontcolor="#ffffff" id=play_c540ac94 shape=box style=filled tooltip="Play: Gather facts from the cluster hypervisor hosts (0)"]
-		play_c540ac94 -> block_7a000cc6 [label=1 color="#18b470" fontcolor="#18b470" id=edge_block_7a000cc6 labeltooltip=1 tooltip=1]
-		subgraph cluster_block_7a000cc6 {
-			block_7a000cc6 [label="[block] Gather additional hypervisor facts kubeinit will use during deployment" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#18b470" id=block_7a000cc6 labeltooltip="Gather additional hypervisor facts kubeinit will use during deployment" shape=box tooltip="Gather additional hypervisor facts kubeinit will use during deployment"]
-			block_7a000cc6 -> role_c0a50dae [label="1 " color="#18b470" fontcolor="#18b470" id=edge_role_c0a50dae labeltooltip="1 " tooltip="1 "]
+		play_28800079 [label="Play: Gather facts from the cluster hypervisor hosts (0)" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#4d7f70" fontcolor="#ffffff" id=play_28800079 shape=box style=filled tooltip="Play: Gather facts from the cluster hypervisor hosts (0)"]
+		play_28800079 -> block_f8438d10 [label=1 color="#4d7f70" fontcolor="#4d7f70" id=edge_block_f8438d10 labeltooltip=1 tooltip=1]
+		subgraph cluster_block_f8438d10 {
+			block_f8438d10 [label="[block] Gather additional hypervisor facts kubeinit will use during deployment" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#4d7f70" id=block_f8438d10 labeltooltip="Gather additional hypervisor facts kubeinit will use during deployment" shape=box tooltip="Gather additional hypervisor facts kubeinit will use during deployment"]
+			block_f8438d10 -> role_297c1ba4 [label="1 " color="#4d7f70" fontcolor="#4d7f70" id=edge_role_297c1ba4 labeltooltip="1 " tooltip="1 "]
 			subgraph "Gather facts from each hypervisor in the deployment" {
-				role_c0a50dae [label="[role] Gather facts from each hypervisor in the deployment" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#18b470" id=role_c0a50dae tooltip="Gather facts from each hypervisor in the deployment"]
+				role_297c1ba4 [label="[role] Gather facts from each hypervisor in the deployment" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#4d7f70" id=role_297c1ba4 tooltip="Gather facts from each hypervisor in the deployment"]
 			}
 		}
 	}
-	"kubeinit/playbook.yml" -> play_dc6b2085 [label="3 Play: Determine facts needed to prepare all hypervisor hosts (1)" color="#063ac6" fontcolor="#063ac6" id=edge_play_dc6b2085 labeltooltip="3 Play: Determine facts needed to prepare all hypervisor hosts (1)" tooltip="3 Play: Determine facts needed to prepare all hypervisor hosts (1)"]
+	"kubeinit/playbook.yml" -> play_f0f1dc72 [label="3 Play: Determine facts needed to prepare all hypervisor hosts (1)" color="#9d2f86" fontcolor="#9d2f86" id=edge_play_f0f1dc72 labeltooltip="3 Play: Determine facts needed to prepare all hypervisor hosts (1)" tooltip="3 Play: Determine facts needed to prepare all hypervisor hosts (1)"]
 	subgraph "Play: Determine facts needed to prepare all hypervisor hosts (1)" {
-		play_dc6b2085 [label="Play: Determine facts needed to prepare all hypervisor hosts (1)" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#063ac6" fontcolor="#ffffff" id=play_dc6b2085 shape=box style=filled tooltip=localhost]
-		play_dc6b2085 -> block_76ce67ee [label=1 color="#063ac6" fontcolor="#063ac6" id=edge_block_76ce67ee labeltooltip=1 tooltip=1]
-		subgraph cluster_block_76ce67ee {
-			block_76ce67ee [label="[block] Gather kubeinit facts" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#063ac6" id=block_76ce67ee labeltooltip="Gather kubeinit facts" shape=box tooltip="Gather kubeinit facts"]
-			block_76ce67ee -> role_1c8c4167 [label="1 " color="#063ac6" fontcolor="#063ac6" id=edge_role_1c8c4167 labeltooltip="1 " tooltip="1 "]
+		play_f0f1dc72 [label="Play: Determine facts needed to prepare all hypervisor hosts (1)" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#9d2f86" fontcolor="#ffffff" id=play_f0f1dc72 shape=box style=filled tooltip=localhost]
+		play_f0f1dc72 -> block_2503e6e5 [label=1 color="#9d2f86" fontcolor="#9d2f86" id=edge_block_2503e6e5 labeltooltip=1 tooltip=1]
+		subgraph cluster_block_2503e6e5 {
+			block_2503e6e5 [label="[block] Gather kubeinit facts" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#9d2f86" id=block_2503e6e5 labeltooltip="Gather kubeinit facts" shape=box tooltip="Gather kubeinit facts"]
+			block_2503e6e5 -> role_7acd5903 [label="1 " color="#9d2f86" fontcolor="#9d2f86" id=edge_role_7acd5903 labeltooltip="1 " tooltip="1 "]
 			subgraph "Gather facts to prepare the cluster hypervisors" {
-				role_1c8c4167 [label="[role] Gather facts to prepare the cluster hypervisors" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#063ac6" id=role_1c8c4167 tooltip="Gather facts to prepare the cluster hypervisors"]
-				role_1c8c4167 -> role_eb226f9b [label="1 " color="#063ac6" fontcolor="#063ac6" id=edge_role_eb226f9b labeltooltip="1 " tooltip="1 "]
+				role_7acd5903 [label="[role] Gather facts to prepare the cluster hypervisors" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#9d2f86" id=role_7acd5903 tooltip="Gather facts to prepare the cluster hypervisors"]
+				role_7acd5903 -> role_07542be2 [label="1 " color="#9d2f86" fontcolor="#9d2f86" id=edge_role_07542be2 labeltooltip="1 " tooltip="1 "]
 				subgraph "Gather kubeinit secrets" {
-					role_eb226f9b [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#063ac6" id=role_eb226f9b tooltip="Gather kubeinit secrets"]
+					role_07542be2 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#9d2f86" id=role_07542be2 tooltip="Gather kubeinit secrets"]
 				}
 			}
 		}
-		play_dc6b2085 -> block_9e99b36e [label=2 color="#063ac6" fontcolor="#063ac6" id=edge_block_9e99b36e labeltooltip=2 tooltip=2]
-		subgraph cluster_block_9e99b36e {
-			block_9e99b36e [label="[block] Prepare the hypervisors" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#063ac6" id=block_9e99b36e labeltooltip="Prepare the hypervisors" shape=box tooltip="Prepare the hypervisors"]
-			block_9e99b36e -> role_1f05407c [label="1 " color="#063ac6" fontcolor="#063ac6" id=edge_role_1f05407c labeltooltip="1 " tooltip="1 "]
+		play_f0f1dc72 -> block_3e2f893c [label=2 color="#9d2f86" fontcolor="#9d2f86" id=edge_block_3e2f893c labeltooltip=2 tooltip=2]
+		subgraph cluster_block_3e2f893c {
+			block_3e2f893c [label="[block] Prepare the hypervisors" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#9d2f86" id=block_3e2f893c labeltooltip="Prepare the hypervisors" shape=box tooltip="Prepare the hypervisors"]
+			block_3e2f893c -> role_89b8de0e [label="1 " color="#9d2f86" fontcolor="#9d2f86" id=edge_role_89b8de0e labeltooltip="1 " tooltip="1 "]
 			subgraph "task-prepare-hypervisors" {
-				role_1f05407c [label="[role] task-prepare-hypervisors" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#063ac6" id=role_1f05407c tooltip="task-prepare-hypervisors"]
-				role_1f05407c -> role_fee39eab [label="1 " color="#063ac6" fontcolor="#063ac6" id=edge_role_fee39eab labeltooltip="1 " tooltip="1 "]
+				role_89b8de0e [label="[role] task-prepare-hypervisors" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#9d2f86" id=role_89b8de0e tooltip="task-prepare-hypervisors"]
+				role_89b8de0e -> role_ee4e4989 [label="1 " color="#9d2f86" fontcolor="#9d2f86" id=edge_role_ee4e4989 labeltooltip="1 " tooltip="1 "]
 				subgraph "Gather kubeinit secrets" {
-					role_fee39eab [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#063ac6" id=role_fee39eab tooltip="Gather kubeinit secrets"]
+					role_ee4e4989 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#9d2f86" id=role_ee4e4989 tooltip="Gather kubeinit secrets"]
 				}
 			}
 		}
 	}
-	"kubeinit/playbook.yml" -> play_5006e321 [label="4 Play: Prepare the infrastructure to deploy service and cluster nodes (0)" color="#c903c4" fontcolor="#c903c4" id=edge_play_5006e321 labeltooltip="4 Play: Prepare the infrastructure to deploy service and cluster nodes (0)" tooltip="4 Play: Prepare the infrastructure to deploy service and cluster nodes (0)"]
+	"kubeinit/playbook.yml" -> play_10593331 [label="4 Play: Prepare the infrastructure to deploy service and cluster nodes (0)" color="#42a626" fontcolor="#42a626" id=edge_play_10593331 labeltooltip="4 Play: Prepare the infrastructure to deploy service and cluster nodes (0)" tooltip="4 Play: Prepare the infrastructure to deploy service and cluster nodes (0)"]
 	subgraph "Play: Prepare the infrastructure to deploy service and cluster nodes (0)" {
-		play_5006e321 [label="Play: Prepare the infrastructure to deploy service and cluster nodes (0)" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#c903c4" fontcolor="#ffffff" id=play_5006e321 shape=box style=filled tooltip="Play: Prepare the infrastructure to deploy service and cluster nodes (0)"]
-		play_5006e321 -> block_785a2cea [label=1 color="#c903c4" fontcolor="#c903c4" id=edge_block_785a2cea labeltooltip=1 tooltip=1]
-		subgraph cluster_block_785a2cea {
-			block_785a2cea [label="[block] Prepare individual hypervisors" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#c903c4" id=block_785a2cea labeltooltip="Prepare individual hypervisors" shape=box tooltip="Prepare individual hypervisors"]
-			block_785a2cea -> role_0d2f090a [label="1 " color="#c903c4" fontcolor="#c903c4" id=edge_role_0d2f090a labeltooltip="1 " tooltip="1 "]
+		play_10593331 [label="Play: Prepare the infrastructure to deploy service and cluster nodes (0)" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#42a626" fontcolor="#ffffff" id=play_10593331 shape=box style=filled tooltip="Play: Prepare the infrastructure to deploy service and cluster nodes (0)"]
+		play_10593331 -> block_f955eaa8 [label=1 color="#42a626" fontcolor="#42a626" id=edge_block_f955eaa8 labeltooltip=1 tooltip=1]
+		subgraph cluster_block_f955eaa8 {
+			block_f955eaa8 [label="[block] Prepare individual hypervisors" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#42a626" id=block_f955eaa8 labeltooltip="Prepare individual hypervisors" shape=box tooltip="Prepare individual hypervisors"]
+			block_f955eaa8 -> role_f68f73b3 [label="1 " color="#42a626" fontcolor="#42a626" id=edge_role_f68f73b3 labeltooltip="1 " tooltip="1 "]
 			subgraph "Prepare each hypervisor in the deployment" {
-				role_0d2f090a [label="[role] Prepare each hypervisor in the deployment" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#c903c4" id=role_0d2f090a tooltip="Prepare each hypervisor in the deployment"]
-				role_0d2f090a -> role_9a4c3337 [label="1 " color="#c903c4" fontcolor="#c903c4" id=edge_role_9a4c3337 labeltooltip="1 " tooltip="1 "]
+				role_f68f73b3 [label="[role] Prepare each hypervisor in the deployment" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#42a626" id=role_f68f73b3 tooltip="Prepare each hypervisor in the deployment"]
+				role_f68f73b3 -> role_ea39f276 [label="1 " color="#42a626" fontcolor="#42a626" id=edge_role_ea39f276 labeltooltip="1 " tooltip="1 "]
 				subgraph "Provision the libvirt services on the hypervisor" {
-					role_9a4c3337 [label="[role] Provision the libvirt services on the hypervisor" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_hypervisor.yml" color="#c903c4" id=role_9a4c3337 tooltip="Provision the libvirt services on the hypervisor"]
+					role_ea39f276 [label="[role] Provision the libvirt services on the hypervisor" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_hypervisor.yml" color="#42a626" id=role_ea39f276 tooltip="Provision the libvirt services on the hypervisor"]
 				}
 			}
 		}
 	}
-	"kubeinit/playbook.yml" -> play_29c56fcd [label="5 Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)" color="#6303c9" fontcolor="#6303c9" id=edge_play_29c56fcd labeltooltip="5 Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)" tooltip="5 Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)"]
+	"kubeinit/playbook.yml" -> play_f9412831 [label="5 Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)" color="#a95123" fontcolor="#a95123" id=edge_play_f9412831 labeltooltip="5 Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)" tooltip="5 Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)"]
 	subgraph "Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)" {
-		play_29c56fcd [label="Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" fontcolor="#ffffff" id=play_29c56fcd shape=box style=filled tooltip=localhost]
-		play_29c56fcd -> block_bcc9688e [label=1 color="#6303c9" fontcolor="#6303c9" id=edge_block_bcc9688e labeltooltip=1 tooltip=1]
-		subgraph cluster_block_bcc9688e {
-			block_bcc9688e [label="[block] Prepare the environment" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_bcc9688e labeltooltip="Prepare the environment" shape=box tooltip="Prepare the environment"]
-			block_bcc9688e -> role_e8ce977d [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_e8ce977d labeltooltip="1 " tooltip="1 "]
+		play_f9412831 [label="Play: Run the deployment on the target infrastructure (OpenStack/libvirt hypervisors) (1)" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" fontcolor="#ffffff" id=play_f9412831 shape=box style=filled tooltip=localhost]
+		play_f9412831 -> block_df4eda3f [label=1 color="#a95123" fontcolor="#a95123" id=edge_block_df4eda3f labeltooltip=1 tooltip=1]
+		subgraph cluster_block_df4eda3f {
+			block_df4eda3f [label="[block] Prepare the environment" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_df4eda3f labeltooltip="Prepare the environment" shape=box tooltip="Prepare the environment"]
+			block_df4eda3f -> role_51c29b4d [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_51c29b4d labeltooltip="1 " tooltip="1 "]
 			subgraph "task-prepare-environment" {
-				role_e8ce977d [label="[role] task-prepare-environment" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_e8ce977d tooltip="task-prepare-environment"]
-				role_e8ce977d -> role_235b36c5 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_235b36c5 labeltooltip="1 " tooltip="1 "]
+				role_51c29b4d [label="[role] task-prepare-environment" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_51c29b4d tooltip="task-prepare-environment"]
+				role_51c29b4d -> role_2a70a004 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_2a70a004 labeltooltip="1 " tooltip="1 "]
 				subgraph "Gather kubeinit secrets" {
-					role_235b36c5 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_235b36c5 tooltip="Gather kubeinit secrets"]
+					role_2a70a004 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_2a70a004 tooltip="Gather kubeinit secrets"]
 				}
-				task_18882723 [label="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_facts_hostvars" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_18882723 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_facts_hostvars"]
-				role_e8ce977d -> task_18882723 [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_task_18882723 labeltooltip="2 " tooltip="2 "]
-				task_a2aef12f [label="kubeinit.kubeinit.kubeinit_prepare : Parse bastion_host_spec into a dictionary if defined" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_a2aef12f shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Parse bastion_host_spec into a dictionary if defined"]
-				role_e8ce977d -> task_a2aef12f [label="3 [when: bastion_host_spec is defined]" color="#6303c9" fontcolor="#6303c9" id=edge_task_a2aef12f labeltooltip="3 [when: bastion_host_spec is defined]" tooltip="3 [when: bastion_host_spec is defined]"]
-				task_efdb8c60 [label="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host group and bastion_host_spec have same name when both defined" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_efdb8c60 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host group and bastion_host_spec have same name when both defined"]
-				role_e8ce977d -> task_efdb8c60 [label="4 [when: bastion_host_map['host'] | default('') | length > 0 and groups['bastion_host'][0] | default('') | length > 0]" color="#6303c9" fontcolor="#6303c9" id=edge_task_efdb8c60 labeltooltip="4 [when: bastion_host_map['host'] | default('') | length > 0 and groups['bastion_host'][0] | default('') | length > 0]" tooltip="4 [when: bastion_host_map['host'] | default('') | length > 0 and groups['bastion_host'][0] | default('') | length > 0]"]
-				task_d0caf880 [label="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_bastion_host_name" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_d0caf880 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_bastion_host_name"]
-				role_e8ce977d -> task_d0caf880 [label="5 " color="#6303c9" fontcolor="#6303c9" id=edge_task_d0caf880 labeltooltip="5 " tooltip="5 "]
-				task_f13b6782 [label="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host group does not have both target and ansible_host keys" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_f13b6782 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host group does not have both target and ansible_host keys"]
-				role_e8ce977d -> task_f13b6782 [label="6 [when: hostvars[kubeinit_bastion_host_name] is defined]" color="#6303c9" fontcolor="#6303c9" id=edge_task_f13b6782 labeltooltip="6 [when: hostvars[kubeinit_bastion_host_name] is defined]" tooltip="6 [when: hostvars[kubeinit_bastion_host_name] is defined]"]
-				task_087437a2 [label="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from group target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_087437a2 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from group target"]
-				role_e8ce977d -> task_087437a2 [label="7 [when: hostvars[kubeinit_bastion_host_name].target | default('') | length > 0]" color="#6303c9" fontcolor="#6303c9" id=edge_task_087437a2 labeltooltip="7 [when: hostvars[kubeinit_bastion_host_name].target | default('') | length > 0]" tooltip="7 [when: hostvars[kubeinit_bastion_host_name].target | default('') | length > 0]"]
-				task_501a998d [label="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from group ansible_host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_501a998d shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from group ansible_host"]
-				role_e8ce977d -> task_501a998d [label="8 [when: hostvars[kubeinit_bastion_host_name].ansible_host | default('') | length > 0]" color="#6303c9" fontcolor="#6303c9" id=edge_task_501a998d labeltooltip="8 [when: hostvars[kubeinit_bastion_host_name].ansible_host | default('') | length > 0]" tooltip="8 [when: hostvars[kubeinit_bastion_host_name].ansible_host | default('') | length > 0]"]
-				task_fd430300 [label="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host_spec does not have both target and ansible_host keys" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_fd430300 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host_spec does not have both target and ansible_host keys"]
-				role_e8ce977d -> task_fd430300 [label="9 [when: bastion_host_map is defined]" color="#6303c9" fontcolor="#6303c9" id=edge_task_fd430300 labeltooltip="9 [when: bastion_host_map is defined]" tooltip="9 [when: bastion_host_map is defined]"]
-				task_1461d030 [label="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from spec target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_1461d030 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from spec target"]
-				role_e8ce977d -> task_1461d030 [label="10 [when: bastion_host_map['target'] | default('') | length > 0]" color="#6303c9" fontcolor="#6303c9" id=edge_task_1461d030 labeltooltip="10 [when: bastion_host_map['target'] | default('') | length > 0]" tooltip="10 [when: bastion_host_map['target'] | default('') | length > 0]"]
-				task_1450d6a7 [label="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from spec ansible_host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_1450d6a7 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from spec ansible_host"]
-				role_e8ce977d -> task_1450d6a7 [label="11 [when: bastion_host_map['ansible_host'] | default('') | length > 0]" color="#6303c9" fontcolor="#6303c9" id=edge_task_1450d6a7 labeltooltip="11 [when: bastion_host_map['ansible_host'] | default('') | length > 0]" tooltip="11 [when: bastion_host_map['ansible_host'] | default('') | length > 0]"]
-				task_80e6e2bb [label="kubeinit.kubeinit.kubeinit_prepare : Use the first hypervisor if neither bastion host spec or group defines a target or ansible_host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_80e6e2bb shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Use the first hypervisor if neither bastion host spec or group defines a target or ansible_host"]
-				role_e8ce977d -> task_80e6e2bb [label="12 " color="#6303c9" fontcolor="#6303c9" id=edge_task_80e6e2bb labeltooltip="12 " tooltip="12 "]
-				task_7147e360 [label="kubeinit.kubeinit.kubeinit_prepare : Parse ovn_central_host_spec into a dictionary if defined" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_7147e360 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Parse ovn_central_host_spec into a dictionary if defined"]
-				role_e8ce977d -> task_7147e360 [label="13 [when: ovn_central_host_spec is defined]" color="#6303c9" fontcolor="#6303c9" id=edge_task_7147e360 labeltooltip="13 [when: ovn_central_host_spec is defined]" tooltip="13 [when: ovn_central_host_spec is defined]"]
-				task_7cfdbdc3 [label="kubeinit.kubeinit.kubeinit_prepare : Assert ovn_central_host group and ovn_central_host_spec have same name when both defined" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_7cfdbdc3 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Assert ovn_central_host group and ovn_central_host_spec have same name when both defined"]
-				role_e8ce977d -> task_7cfdbdc3 [label="14 [when: ovn_central_host_map['host'] | default('') | length > 0 and groups['ovn_central_host'][0] | default('') | length > 0]" color="#6303c9" fontcolor="#6303c9" id=edge_task_7cfdbdc3 labeltooltip="14 [when: ovn_central_host_map['host'] | default('') | length > 0 and groups['ovn_central_host'][0] | default('') | length > 0]" tooltip="14 [when: ovn_central_host_map['host'] | default('') | length > 0 and groups['ovn_central_host'][0] | default('') | length > 0]"]
-				task_b099f723 [label="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_ovn_central_host_name" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_b099f723 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_ovn_central_host_name"]
-				role_e8ce977d -> task_b099f723 [label="15 " color="#6303c9" fontcolor="#6303c9" id=edge_task_b099f723 labeltooltip="15 " tooltip="15 "]
-				task_a2428514 [label="kubeinit.kubeinit.kubeinit_prepare : Define default ovn-central target and ansible_host from group target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_a2428514 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default ovn-central target and ansible_host from group target"]
-				role_e8ce977d -> task_a2428514 [label="16 [when: hostvars[kubeinit_ovn_central_host_name].target | default('') | length > 0]" color="#6303c9" fontcolor="#6303c9" id=edge_task_a2428514 labeltooltip="16 [when: hostvars[kubeinit_ovn_central_host_name].target | default('') | length > 0]" tooltip="16 [when: hostvars[kubeinit_ovn_central_host_name].target | default('') | length > 0]"]
-				task_5baf0953 [label="kubeinit.kubeinit.kubeinit_prepare : Define default ovn-central target and ansible_host from spec target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_5baf0953 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default ovn-central target and ansible_host from spec target"]
-				role_e8ce977d -> task_5baf0953 [label="17 [when: ovn_central_host_map['target'] | default('') | length > 0]" color="#6303c9" fontcolor="#6303c9" id=edge_task_5baf0953 labeltooltip="17 [when: ovn_central_host_map['target'] | default('') | length > 0]" tooltip="17 [when: ovn_central_host_map['target'] | default('') | length > 0]"]
-				task_90c61e1d [label="kubeinit.kubeinit.kubeinit_prepare : Use the first hypervisor if neither ovn-central host spec or group defines a target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_90c61e1d shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Use the first hypervisor if neither ovn-central host spec or group defines a target"]
-				role_e8ce977d -> task_90c61e1d [label="18 " color="#6303c9" fontcolor="#6303c9" id=edge_task_90c61e1d labeltooltip="18 " tooltip="18 "]
-				task_ca7f05bc [label="kubeinit.kubeinit.kubeinit_prepare : Add ansible_host for ovn_central_host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_ca7f05bc shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add ansible_host for ovn_central_host"]
-				role_e8ce977d -> task_ca7f05bc [label="19 " color="#6303c9" fontcolor="#6303c9" id=edge_task_ca7f05bc labeltooltip="19 " tooltip="19 "]
-				task_cc033fa0 [label="kubeinit.kubeinit.kubeinit_prepare : Add all controller nodes to the all_controller_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_cc033fa0 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all controller nodes to the all_controller_nodes group"]
-				role_e8ce977d -> task_cc033fa0 [label="20 " color="#6303c9" fontcolor="#6303c9" id=edge_task_cc033fa0 labeltooltip="20 " tooltip="20 "]
-				task_61a37b84 [label="kubeinit.kubeinit.kubeinit_prepare : Add all compute nodes to the all_compute_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_61a37b84 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all compute nodes to the all_compute_nodes group"]
-				role_e8ce977d -> task_61a37b84 [label="21 " color="#6303c9" fontcolor="#6303c9" id=edge_task_61a37b84 labeltooltip="21 " tooltip="21 "]
-				task_17774ba9 [label="kubeinit.kubeinit.kubeinit_prepare : Add all controller and compute nodes to the all_cluster_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_17774ba9 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all controller and compute nodes to the all_cluster_nodes group"]
-				role_e8ce977d -> task_17774ba9 [label="22 " color="#6303c9" fontcolor="#6303c9" id=edge_task_17774ba9 labeltooltip="22 " tooltip="22 "]
-				task_65ec9699 [label="kubeinit.kubeinit.kubeinit_prepare : Add any extra cluster vm guest nodes to the all_extra_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_65ec9699 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add any extra cluster vm guest nodes to the all_extra_nodes group"]
-				role_e8ce977d -> task_65ec9699 [label="23 [when: kubeinit_cluster_distro in hostvars[item].when_distro]" color="#6303c9" fontcolor="#6303c9" id=edge_task_65ec9699 labeltooltip="23 [when: kubeinit_cluster_distro in hostvars[item].when_distro]" tooltip="23 [when: kubeinit_cluster_distro in hostvars[item].when_distro]"]
-				task_310c8cb4 [label="kubeinit.kubeinit.kubeinit_prepare : Collect all cluster node hypervisors" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_310c8cb4 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Collect all cluster node hypervisors"]
-				role_e8ce977d -> task_310c8cb4 [label="24 " color="#6303c9" fontcolor="#6303c9" id=edge_task_310c8cb4 labeltooltip="24 " tooltip="24 "]
-				task_0213ee20 [label="kubeinit.kubeinit.kubeinit_prepare : Show the before and after values of the hypervisors fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_0213ee20 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Show the before and after values of the hypervisors fact"]
-				role_e8ce977d -> task_0213ee20 [label="25 " color="#6303c9" fontcolor="#6303c9" id=edge_task_0213ee20 labeltooltip="25 " tooltip="25 "]
-				task_722d30c8 [label="kubeinit.kubeinit.kubeinit_prepare : Add all service nodes to the all_service_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_722d30c8 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all service nodes to the all_service_nodes group"]
-				role_e8ce977d -> task_722d30c8 [label="26 " color="#6303c9" fontcolor="#6303c9" id=edge_task_722d30c8 labeltooltip="26 " tooltip="26 "]
-				task_a151cf31 [label="kubeinit.kubeinit.kubeinit_prepare : Create tuples for each service and each service node providing that service" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_a151cf31 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Create tuples for each service and each service node providing that service"]
-				role_e8ce977d -> task_a151cf31 [label="27 " color="#6303c9" fontcolor="#6303c9" id=edge_task_a151cf31 labeltooltip="27 " tooltip="27 "]
-				task_23297b6b [label="kubeinit.kubeinit.kubeinit_prepare : Combine those tuples into dict of services and nodes providing that service" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_23297b6b shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Combine those tuples into dict of services and nodes providing that service"]
-				role_e8ce977d -> task_23297b6b [label="28 " color="#6303c9" fontcolor="#6303c9" id=edge_task_23297b6b labeltooltip="28 " tooltip="28 "]
-				task_34a201d8 [label="kubeinit.kubeinit.kubeinit_prepare : Check for any services being provided on more than one service node" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_34a201d8 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Check for any services being provided on more than one service node"]
-				role_e8ce977d -> task_34a201d8 [label="29 [when: item.value | length > 1]" color="#6303c9" fontcolor="#6303c9" id=edge_task_34a201d8 labeltooltip="29 [when: item.value | length > 1]" tooltip="29 [when: item.value | length > 1]"]
-				task_9891253a [label="kubeinit.kubeinit.kubeinit_prepare : Use first service node if there is no assigned provision service node" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_9891253a shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Use first service node if there is no assigned provision service node"]
-				role_e8ce977d -> task_9891253a [label="30 [when: 'provision' not in cluster_services_dict]" color="#6303c9" fontcolor="#6303c9" id=edge_task_9891253a labeltooltip="30 [when: 'provision' not in cluster_services_dict]" tooltip="30 [when: 'provision' not in cluster_services_dict]"]
-				task_0c45b7fe [label="kubeinit.kubeinit.kubeinit_prepare : Flatten dictionary values into final form" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_0c45b7fe shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Flatten dictionary values into final form"]
-				role_e8ce977d -> task_0c45b7fe [label="31 " color="#6303c9" fontcolor="#6303c9" id=edge_task_0c45b7fe labeltooltip="31 " tooltip="31 "]
-				task_45f630e9 [label="kubeinit.kubeinit.kubeinit_prepare : Set fact for cluster nameserver" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_45f630e9 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set fact for cluster nameserver"]
-				role_e8ce977d -> task_45f630e9 [label="32 [when: 'bind' in all_cluster_services]" color="#6303c9" fontcolor="#6303c9" id=edge_task_45f630e9 labeltooltip="32 [when: 'bind' in all_cluster_services]" tooltip="32 [when: 'bind' in all_cluster_services]"]
-				task_291912ff [label="kubeinit.kubeinit.kubeinit_prepare : Set all services cluster fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_291912ff shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set all services cluster fact"]
-				role_e8ce977d -> task_291912ff [label="33 " color="#6303c9" fontcolor="#6303c9" id=edge_task_291912ff labeltooltip="33 " tooltip="33 "]
-				task_3abaa876 [label="kubeinit.kubeinit.kubeinit_prepare : Add all service and cluster nodes to the all_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_3abaa876 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all service and cluster nodes to the all_nodes group"]
-				role_e8ce977d -> task_3abaa876 [label="34 " color="#6303c9" fontcolor="#6303c9" id=edge_task_3abaa876 labeltooltip="34 " tooltip="34 "]
-				task_22416987 [label="kubeinit.kubeinit.kubeinit_prepare : Add all cluster hypervisors to the all_hosts group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_22416987 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all cluster hypervisors to the all_hosts group"]
-				role_e8ce977d -> task_22416987 [label="35 [when: item in hostvars[kubeinit_ovn_central_host_name].target or item in groups['kubeinit_hypervisors']
-]" color="#6303c9" fontcolor="#6303c9" id=edge_task_22416987 labeltooltip="35 [when: item in hostvars[kubeinit_ovn_central_host_name].target or item in groups['kubeinit_hypervisors']
+				task_83553c1c [label="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_facts_hostvars" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_83553c1c shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_facts_hostvars"]
+				role_51c29b4d -> task_83553c1c [label="2 " color="#a95123" fontcolor="#a95123" id=edge_task_83553c1c labeltooltip="2 " tooltip="2 "]
+				task_5bdc8a16 [label="kubeinit.kubeinit.kubeinit_prepare : Parse bastion_host_spec into a dictionary if defined" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_5bdc8a16 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Parse bastion_host_spec into a dictionary if defined"]
+				role_51c29b4d -> task_5bdc8a16 [label="3 [when: bastion_host_spec is defined]" color="#a95123" fontcolor="#a95123" id=edge_task_5bdc8a16 labeltooltip="3 [when: bastion_host_spec is defined]" tooltip="3 [when: bastion_host_spec is defined]"]
+				task_f11b6105 [label="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host group and bastion_host_spec have same name when both defined" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_f11b6105 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host group and bastion_host_spec have same name when both defined"]
+				role_51c29b4d -> task_f11b6105 [label="4 [when: bastion_host_map['host'] | default('') | length > 0 and groups['bastion_host'][0] | default('') | length > 0]" color="#a95123" fontcolor="#a95123" id=edge_task_f11b6105 labeltooltip="4 [when: bastion_host_map['host'] | default('') | length > 0 and groups['bastion_host'][0] | default('') | length > 0]" tooltip="4 [when: bastion_host_map['host'] | default('') | length > 0 and groups['bastion_host'][0] | default('') | length > 0]"]
+				task_bb78d67a [label="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_bastion_host_name" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_bb78d67a shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_bastion_host_name"]
+				role_51c29b4d -> task_bb78d67a [label="5 " color="#a95123" fontcolor="#a95123" id=edge_task_bb78d67a labeltooltip="5 " tooltip="5 "]
+				task_809e6d1b [label="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host group does not have both target and ansible_host keys" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_809e6d1b shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host group does not have both target and ansible_host keys"]
+				role_51c29b4d -> task_809e6d1b [label="6 [when: hostvars[kubeinit_bastion_host_name] is defined]" color="#a95123" fontcolor="#a95123" id=edge_task_809e6d1b labeltooltip="6 [when: hostvars[kubeinit_bastion_host_name] is defined]" tooltip="6 [when: hostvars[kubeinit_bastion_host_name] is defined]"]
+				task_16d85691 [label="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from group target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_16d85691 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from group target"]
+				role_51c29b4d -> task_16d85691 [label="7 [when: hostvars[kubeinit_bastion_host_name].target | default('') | length > 0]" color="#a95123" fontcolor="#a95123" id=edge_task_16d85691 labeltooltip="7 [when: hostvars[kubeinit_bastion_host_name].target | default('') | length > 0]" tooltip="7 [when: hostvars[kubeinit_bastion_host_name].target | default('') | length > 0]"]
+				task_a6f26080 [label="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from group ansible_host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_a6f26080 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from group ansible_host"]
+				role_51c29b4d -> task_a6f26080 [label="8 [when: hostvars[kubeinit_bastion_host_name].ansible_host | default('') | length > 0]" color="#a95123" fontcolor="#a95123" id=edge_task_a6f26080 labeltooltip="8 [when: hostvars[kubeinit_bastion_host_name].ansible_host | default('') | length > 0]" tooltip="8 [when: hostvars[kubeinit_bastion_host_name].ansible_host | default('') | length > 0]"]
+				task_48deabd7 [label="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host_spec does not have both target and ansible_host keys" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_48deabd7 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Assert bastion_host_spec does not have both target and ansible_host keys"]
+				role_51c29b4d -> task_48deabd7 [label="9 [when: bastion_host_map is defined]" color="#a95123" fontcolor="#a95123" id=edge_task_48deabd7 labeltooltip="9 [when: bastion_host_map is defined]" tooltip="9 [when: bastion_host_map is defined]"]
+				task_1b60cd6a [label="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from spec target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_1b60cd6a shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from spec target"]
+				role_51c29b4d -> task_1b60cd6a [label="10 [when: bastion_host_map['target'] | default('') | length > 0]" color="#a95123" fontcolor="#a95123" id=edge_task_1b60cd6a labeltooltip="10 [when: bastion_host_map['target'] | default('') | length > 0]" tooltip="10 [when: bastion_host_map['target'] | default('') | length > 0]"]
+				task_76a5198f [label="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from spec ansible_host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_76a5198f shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default bastion target and ansible_host from spec ansible_host"]
+				role_51c29b4d -> task_76a5198f [label="11 [when: bastion_host_map['ansible_host'] | default('') | length > 0]" color="#a95123" fontcolor="#a95123" id=edge_task_76a5198f labeltooltip="11 [when: bastion_host_map['ansible_host'] | default('') | length > 0]" tooltip="11 [when: bastion_host_map['ansible_host'] | default('') | length > 0]"]
+				task_75bc12c2 [label="kubeinit.kubeinit.kubeinit_prepare : Use the first hypervisor if neither bastion host spec or group defines a target or ansible_host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_75bc12c2 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Use the first hypervisor if neither bastion host spec or group defines a target or ansible_host"]
+				role_51c29b4d -> task_75bc12c2 [label="12 " color="#a95123" fontcolor="#a95123" id=edge_task_75bc12c2 labeltooltip="12 " tooltip="12 "]
+				task_bbca4b0b [label="kubeinit.kubeinit.kubeinit_prepare : Parse ovn_central_host_spec into a dictionary if defined" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_bbca4b0b shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Parse ovn_central_host_spec into a dictionary if defined"]
+				role_51c29b4d -> task_bbca4b0b [label="13 [when: ovn_central_host_spec is defined]" color="#a95123" fontcolor="#a95123" id=edge_task_bbca4b0b labeltooltip="13 [when: ovn_central_host_spec is defined]" tooltip="13 [when: ovn_central_host_spec is defined]"]
+				task_1d3d9cab [label="kubeinit.kubeinit.kubeinit_prepare : Assert ovn_central_host group and ovn_central_host_spec have same name when both defined" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_1d3d9cab shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Assert ovn_central_host group and ovn_central_host_spec have same name when both defined"]
+				role_51c29b4d -> task_1d3d9cab [label="14 [when: ovn_central_host_map['host'] | default('') | length > 0 and groups['ovn_central_host'][0] | default('') | length > 0]" color="#a95123" fontcolor="#a95123" id=edge_task_1d3d9cab labeltooltip="14 [when: ovn_central_host_map['host'] | default('') | length > 0 and groups['ovn_central_host'][0] | default('') | length > 0]" tooltip="14 [when: ovn_central_host_map['host'] | default('') | length > 0 and groups['ovn_central_host'][0] | default('') | length > 0]"]
+				task_9a5b0e2c [label="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_ovn_central_host_name" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_9a5b0e2c shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define kubeinit_ovn_central_host_name"]
+				role_51c29b4d -> task_9a5b0e2c [label="15 " color="#a95123" fontcolor="#a95123" id=edge_task_9a5b0e2c labeltooltip="15 " tooltip="15 "]
+				task_693deba0 [label="kubeinit.kubeinit.kubeinit_prepare : Define default ovn-central target and ansible_host from group target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_693deba0 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default ovn-central target and ansible_host from group target"]
+				role_51c29b4d -> task_693deba0 [label="16 [when: hostvars[kubeinit_ovn_central_host_name].target | default('') | length > 0]" color="#a95123" fontcolor="#a95123" id=edge_task_693deba0 labeltooltip="16 [when: hostvars[kubeinit_ovn_central_host_name].target | default('') | length > 0]" tooltip="16 [when: hostvars[kubeinit_ovn_central_host_name].target | default('') | length > 0]"]
+				task_8d7f1340 [label="kubeinit.kubeinit.kubeinit_prepare : Define default ovn-central target and ansible_host from spec target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_8d7f1340 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define default ovn-central target and ansible_host from spec target"]
+				role_51c29b4d -> task_8d7f1340 [label="17 [when: ovn_central_host_map['target'] | default('') | length > 0]" color="#a95123" fontcolor="#a95123" id=edge_task_8d7f1340 labeltooltip="17 [when: ovn_central_host_map['target'] | default('') | length > 0]" tooltip="17 [when: ovn_central_host_map['target'] | default('') | length > 0]"]
+				task_eb572a05 [label="kubeinit.kubeinit.kubeinit_prepare : Use the first hypervisor if neither ovn-central host spec or group defines a target" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_eb572a05 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Use the first hypervisor if neither ovn-central host spec or group defines a target"]
+				role_51c29b4d -> task_eb572a05 [label="18 " color="#a95123" fontcolor="#a95123" id=edge_task_eb572a05 labeltooltip="18 " tooltip="18 "]
+				task_eceab902 [label="kubeinit.kubeinit.kubeinit_prepare : Add ansible_host for ovn_central_host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_eceab902 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add ansible_host for ovn_central_host"]
+				role_51c29b4d -> task_eceab902 [label="19 " color="#a95123" fontcolor="#a95123" id=edge_task_eceab902 labeltooltip="19 " tooltip="19 "]
+				task_b49e145f [label="kubeinit.kubeinit.kubeinit_prepare : Add all controller nodes to the all_controller_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_b49e145f shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all controller nodes to the all_controller_nodes group"]
+				role_51c29b4d -> task_b49e145f [label="20 " color="#a95123" fontcolor="#a95123" id=edge_task_b49e145f labeltooltip="20 " tooltip="20 "]
+				task_c3113b8c [label="kubeinit.kubeinit.kubeinit_prepare : Add all compute nodes to the all_compute_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_c3113b8c shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all compute nodes to the all_compute_nodes group"]
+				role_51c29b4d -> task_c3113b8c [label="21 " color="#a95123" fontcolor="#a95123" id=edge_task_c3113b8c labeltooltip="21 " tooltip="21 "]
+				task_c2032bff [label="kubeinit.kubeinit.kubeinit_prepare : Add all controller and compute nodes to the all_cluster_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_c2032bff shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all controller and compute nodes to the all_cluster_nodes group"]
+				role_51c29b4d -> task_c2032bff [label="22 " color="#a95123" fontcolor="#a95123" id=edge_task_c2032bff labeltooltip="22 " tooltip="22 "]
+				task_801ec1d8 [label="kubeinit.kubeinit.kubeinit_prepare : Add any extra cluster vm guest nodes to the all_extra_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_801ec1d8 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add any extra cluster vm guest nodes to the all_extra_nodes group"]
+				role_51c29b4d -> task_801ec1d8 [label="23 [when: kubeinit_cluster_distro in hostvars[item].when_distro]" color="#a95123" fontcolor="#a95123" id=edge_task_801ec1d8 labeltooltip="23 [when: kubeinit_cluster_distro in hostvars[item].when_distro]" tooltip="23 [when: kubeinit_cluster_distro in hostvars[item].when_distro]"]
+				task_42b40e7b [label="kubeinit.kubeinit.kubeinit_prepare : Collect all cluster node hypervisors" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_42b40e7b shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Collect all cluster node hypervisors"]
+				role_51c29b4d -> task_42b40e7b [label="24 " color="#a95123" fontcolor="#a95123" id=edge_task_42b40e7b labeltooltip="24 " tooltip="24 "]
+				task_2ee6dc1b [label="kubeinit.kubeinit.kubeinit_prepare : Show the before and after values of the hypervisors fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_2ee6dc1b shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Show the before and after values of the hypervisors fact"]
+				role_51c29b4d -> task_2ee6dc1b [label="25 " color="#a95123" fontcolor="#a95123" id=edge_task_2ee6dc1b labeltooltip="25 " tooltip="25 "]
+				task_44b32e57 [label="kubeinit.kubeinit.kubeinit_prepare : Add all service nodes to the all_service_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_44b32e57 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all service nodes to the all_service_nodes group"]
+				role_51c29b4d -> task_44b32e57 [label="26 " color="#a95123" fontcolor="#a95123" id=edge_task_44b32e57 labeltooltip="26 " tooltip="26 "]
+				task_5cb831cf [label="kubeinit.kubeinit.kubeinit_prepare : Create tuples for each service and each service node providing that service" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_5cb831cf shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Create tuples for each service and each service node providing that service"]
+				role_51c29b4d -> task_5cb831cf [label="27 " color="#a95123" fontcolor="#a95123" id=edge_task_5cb831cf labeltooltip="27 " tooltip="27 "]
+				task_39404114 [label="kubeinit.kubeinit.kubeinit_prepare : Combine those tuples into dict of services and nodes providing that service" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_39404114 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Combine those tuples into dict of services and nodes providing that service"]
+				role_51c29b4d -> task_39404114 [label="28 " color="#a95123" fontcolor="#a95123" id=edge_task_39404114 labeltooltip="28 " tooltip="28 "]
+				task_143715e4 [label="kubeinit.kubeinit.kubeinit_prepare : Check for any services being provided on more than one service node" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_143715e4 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Check for any services being provided on more than one service node"]
+				role_51c29b4d -> task_143715e4 [label="29 [when: item.value | length > 1]" color="#a95123" fontcolor="#a95123" id=edge_task_143715e4 labeltooltip="29 [when: item.value | length > 1]" tooltip="29 [when: item.value | length > 1]"]
+				task_84620467 [label="kubeinit.kubeinit.kubeinit_prepare : Use first service node if there is no assigned provision service node" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_84620467 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Use first service node if there is no assigned provision service node"]
+				role_51c29b4d -> task_84620467 [label="30 [when: 'provision' not in cluster_services_dict]" color="#a95123" fontcolor="#a95123" id=edge_task_84620467 labeltooltip="30 [when: 'provision' not in cluster_services_dict]" tooltip="30 [when: 'provision' not in cluster_services_dict]"]
+				task_cf3c4293 [label="kubeinit.kubeinit.kubeinit_prepare : Flatten dictionary values into final form" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_cf3c4293 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Flatten dictionary values into final form"]
+				role_51c29b4d -> task_cf3c4293 [label="31 " color="#a95123" fontcolor="#a95123" id=edge_task_cf3c4293 labeltooltip="31 " tooltip="31 "]
+				task_48c11dc6 [label="kubeinit.kubeinit.kubeinit_prepare : Set fact for cluster nameserver" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_48c11dc6 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set fact for cluster nameserver"]
+				role_51c29b4d -> task_48c11dc6 [label="32 [when: 'bind' in all_cluster_services]" color="#a95123" fontcolor="#a95123" id=edge_task_48c11dc6 labeltooltip="32 [when: 'bind' in all_cluster_services]" tooltip="32 [when: 'bind' in all_cluster_services]"]
+				task_13fcf649 [label="kubeinit.kubeinit.kubeinit_prepare : Set all services cluster fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_13fcf649 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set all services cluster fact"]
+				role_51c29b4d -> task_13fcf649 [label="33 " color="#a95123" fontcolor="#a95123" id=edge_task_13fcf649 labeltooltip="33 " tooltip="33 "]
+				task_611e5885 [label="kubeinit.kubeinit.kubeinit_prepare : Add all service and cluster nodes to the all_nodes group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_611e5885 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all service and cluster nodes to the all_nodes group"]
+				role_51c29b4d -> task_611e5885 [label="34 " color="#a95123" fontcolor="#a95123" id=edge_task_611e5885 labeltooltip="34 " tooltip="34 "]
+				task_474bf5bb [label="kubeinit.kubeinit.kubeinit_prepare : Add all cluster hypervisors to the all_hosts group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_474bf5bb shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all cluster hypervisors to the all_hosts group"]
+				role_51c29b4d -> task_474bf5bb [label="35 [when: item in hostvars[kubeinit_ovn_central_host_name].target or item in groups['kubeinit_hypervisors']
+]" color="#a95123" fontcolor="#a95123" id=edge_task_474bf5bb labeltooltip="35 [when: item in hostvars[kubeinit_ovn_central_host_name].target or item in groups['kubeinit_hypervisors']
 ]" tooltip="35 [when: item in hostvars[kubeinit_ovn_central_host_name].target or item in groups['kubeinit_hypervisors']
 ]"]
-				task_6511a1ff [label="kubeinit.kubeinit.kubeinit_prepare : Add all hosts to the all_ovn_hosts group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_6511a1ff shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all hosts to the all_ovn_hosts group"]
-				role_e8ce977d -> task_6511a1ff [label="36 " color="#6303c9" fontcolor="#6303c9" id=edge_task_6511a1ff labeltooltip="36 " tooltip="36 "]
-				task_bef70035 [label="kubeinit.kubeinit.kubeinit_prepare : Collect all of the localhost and hypervisor authorized keys into authorized_keys list" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_bef70035 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Collect all of the localhost and hypervisor authorized keys into authorized_keys list"]
-				role_e8ce977d -> task_bef70035 [label="37 " color="#6303c9" fontcolor="#6303c9" id=edge_task_bef70035 labeltooltip="37 " tooltip="37 "]
-				task_4761ee1e [label="kubeinit.kubeinit.kubeinit_prepare : Set all hypervisor authorized keys cluster fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_4761ee1e shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set all hypervisor authorized keys cluster fact"]
-				role_e8ce977d -> task_4761ee1e [label="38 " color="#6303c9" fontcolor="#6303c9" id=edge_task_4761ee1e labeltooltip="38 " tooltip="38 "]
-				task_fd4f44a1 [label="kubeinit.kubeinit.kubeinit_prepare : Add services guest and cluster nodes to the all_guest_vms group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_fd4f44a1 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add services guest and cluster nodes to the all_guest_vms group"]
-				role_e8ce977d -> task_fd4f44a1 [label="39 [when: hostvars[item].type == 'virtual']" color="#6303c9" fontcolor="#6303c9" id=edge_task_fd4f44a1 labeltooltip="39 [when: hostvars[item].type == 'virtual']" tooltip="39 [when: hostvars[item].type == 'virtual']"]
-				task_776677e6 [label="kubeinit.kubeinit.kubeinit_prepare : Collect all of the node aliases" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_776677e6 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Collect all of the node aliases"]
-				role_e8ce977d -> task_776677e6 [label="40 " color="#6303c9" fontcolor="#6303c9" id=edge_task_776677e6 labeltooltip="40 " tooltip="40 "]
-				task_57f0b3ba [label="kubeinit.kubeinit.kubeinit_prepare : Set all node aliases cluster fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#6303c9" id=task_57f0b3ba shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set all node aliases cluster fact"]
-				role_e8ce977d -> task_57f0b3ba [label="41 " color="#6303c9" fontcolor="#6303c9" id=edge_task_57f0b3ba labeltooltip="41 " tooltip="41 "]
-				task_11601321 [label="kubeinit.kubeinit.kubeinit_prepare : Define group facts" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_11601321 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define group facts"]
-				role_e8ce977d -> task_11601321 [label="42 " color="#6303c9" fontcolor="#6303c9" id=edge_task_11601321 labeltooltip="42 " tooltip="42 "]
-				task_3dc25786 [label="kubeinit.kubeinit.kubeinit_prepare : Install podman if required" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_3dc25786 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Install podman if required"]
-				role_e8ce977d -> task_3dc25786 [label="43 [when: not hostvars['localhost'].podman_is_installed]" color="#6303c9" fontcolor="#6303c9" id=edge_task_3dc25786 labeltooltip="43 [when: not hostvars['localhost'].podman_is_installed]" tooltip="43 [when: not hostvars['localhost'].podman_is_installed]"]
-				task_ccb5d8a5 [label="kubeinit.kubeinit.kubeinit_prepare : Define service node facts" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_ccb5d8a5 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define service node facts"]
-				role_e8ce977d -> task_ccb5d8a5 [label="44 " color="#6303c9" fontcolor="#6303c9" id=edge_task_ccb5d8a5 labeltooltip="44 " tooltip="44 "]
-				role_e8ce977d -> role_167eed3d [label="45 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_167eed3d labeltooltip="45 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="45 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+				task_62d7c1a1 [label="kubeinit.kubeinit.kubeinit_prepare : Add all hosts to the all_ovn_hosts group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_62d7c1a1 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all hosts to the all_ovn_hosts group"]
+				role_51c29b4d -> task_62d7c1a1 [label="36 " color="#a95123" fontcolor="#a95123" id=edge_task_62d7c1a1 labeltooltip="36 " tooltip="36 "]
+				task_d025a519 [label="kubeinit.kubeinit.kubeinit_prepare : Collect all of the localhost and hypervisor authorized keys into authorized_keys list" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_d025a519 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Collect all of the localhost and hypervisor authorized keys into authorized_keys list"]
+				role_51c29b4d -> task_d025a519 [label="37 " color="#a95123" fontcolor="#a95123" id=edge_task_d025a519 labeltooltip="37 " tooltip="37 "]
+				task_75a660f3 [label="kubeinit.kubeinit.kubeinit_prepare : Set all hypervisor authorized keys cluster fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_75a660f3 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set all hypervisor authorized keys cluster fact"]
+				role_51c29b4d -> task_75a660f3 [label="38 " color="#a95123" fontcolor="#a95123" id=edge_task_75a660f3 labeltooltip="38 " tooltip="38 "]
+				task_1c5b2545 [label="kubeinit.kubeinit.kubeinit_prepare : Add services guest and cluster nodes to the all_guest_vms group" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_1c5b2545 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add services guest and cluster nodes to the all_guest_vms group"]
+				role_51c29b4d -> task_1c5b2545 [label="39 [when: hostvars[item].type == 'virtual']" color="#a95123" fontcolor="#a95123" id=edge_task_1c5b2545 labeltooltip="39 [when: hostvars[item].type == 'virtual']" tooltip="39 [when: hostvars[item].type == 'virtual']"]
+				task_15f659fd [label="kubeinit.kubeinit.kubeinit_prepare : Collect all of the node aliases" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_15f659fd shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Collect all of the node aliases"]
+				role_51c29b4d -> task_15f659fd [label="40 " color="#a95123" fontcolor="#a95123" id=edge_task_15f659fd labeltooltip="40 " tooltip="40 "]
+				task_2850e444 [label="kubeinit.kubeinit.kubeinit_prepare : Set all node aliases cluster fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_groups.yml" color="#a95123" id=task_2850e444 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set all node aliases cluster fact"]
+				role_51c29b4d -> task_2850e444 [label="41 " color="#a95123" fontcolor="#a95123" id=edge_task_2850e444 labeltooltip="41 " tooltip="41 "]
+				task_279aca47 [label="kubeinit.kubeinit.kubeinit_prepare : Define group facts" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_279aca47 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define group facts"]
+				role_51c29b4d -> task_279aca47 [label="42 " color="#a95123" fontcolor="#a95123" id=edge_task_279aca47 labeltooltip="42 " tooltip="42 "]
+				task_3ac5722f [label="kubeinit.kubeinit.kubeinit_prepare : Install podman if required" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_3ac5722f shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Install podman if required"]
+				role_51c29b4d -> task_3ac5722f [label="43 [when: not hostvars['localhost'].podman_is_installed]" color="#a95123" fontcolor="#a95123" id=edge_task_3ac5722f labeltooltip="43 [when: not hostvars['localhost'].podman_is_installed]" tooltip="43 [when: not hostvars['localhost'].podman_is_installed]"]
+				task_47b63b6e [label="kubeinit.kubeinit.kubeinit_prepare : Define service node facts" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_47b63b6e shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define service node facts"]
+				role_51c29b4d -> task_47b63b6e [label="44 " color="#a95123" fontcolor="#a95123" id=edge_task_47b63b6e labeltooltip="44 " tooltip="44 "]
+				role_51c29b4d -> role_53c45efd [label="45 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_53c45efd labeltooltip="45 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="45 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 				subgraph "Gather facts from bastion_host if needed" {
-					role_167eed3d [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_167eed3d tooltip="Gather facts from bastion_host if needed"]
+					role_53c45efd [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_53c45efd tooltip="Gather facts from bastion_host if needed"]
 				}
-				task_accb6b14 [label="kubeinit.kubeinit.kubeinit_prepare : Generate an OpenSSH keypair bastion host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_accb6b14 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Generate an OpenSSH keypair bastion host"]
-				role_e8ce977d -> task_accb6b14 [label="46 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_task_accb6b14 labeltooltip="46 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="46 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
-				task_0ee9316f [label="kubeinit.kubeinit.kubeinit_prepare : Set authorized_key hostvar for bastion host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_0ee9316f shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set authorized_key hostvar for bastion host"]
-				role_e8ce977d -> task_0ee9316f [label="47 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_task_0ee9316f labeltooltip="47 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="47 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
-				task_220401bd [label="kubeinit.kubeinit.kubeinit_prepare : Add bastion host authorized key to cluster authorized_keys" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_220401bd shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add bastion host authorized key to cluster authorized_keys"]
-				role_e8ce977d -> task_220401bd [label="48 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_task_220401bd labeltooltip="48 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="48 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
-				task_fdc13e9d [label="kubeinit.kubeinit.kubeinit_prepare : Set all cluster hypervisors fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_fdc13e9d shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set all cluster hypervisors fact"]
-				role_e8ce977d -> task_fdc13e9d [label="49 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_task_fdc13e9d labeltooltip="49 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="49 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
-				task_2add894b [label="kubeinit.kubeinit.kubeinit_prepare : Update kubeinit_cluster_hostvars" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_2add894b shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Update kubeinit_cluster_hostvars"]
-				role_e8ce977d -> task_2add894b [label="50 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_task_2add894b labeltooltip="50 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="50 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
-				task_0155c037 [label="kubeinit.kubeinit.kubeinit_prepare : Add all cluster authorized keys to all hypervisors" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_0155c037 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all cluster authorized keys to all hypervisors"]
-				role_e8ce977d -> task_0155c037 [label="51 " color="#6303c9" fontcolor="#6303c9" id=edge_task_0155c037 labeltooltip="51 " tooltip="51 "]
-				task_1f7c0717 [label="kubeinit.kubeinit.kubeinit_prepare : Define additional host, node and services facts" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_1f7c0717 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define additional host, node and services facts"]
-				role_e8ce977d -> task_1f7c0717 [label="52 " color="#6303c9" fontcolor="#6303c9" id=edge_task_1f7c0717 labeltooltip="52 " tooltip="52 "]
-				task_069aab90 [label="kubeinit.kubeinit.kubeinit_prepare : Add ssh ProxyCommand option for all nodes" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=task_069aab90 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add ssh ProxyCommand option for all nodes"]
-				role_e8ce977d -> task_069aab90 [label="53 " color="#6303c9" fontcolor="#6303c9" id=edge_task_069aab90 labeltooltip="53 " tooltip="53 "]
+				task_59be20db [label="kubeinit.kubeinit.kubeinit_prepare : Generate an OpenSSH keypair bastion host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_59be20db shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Generate an OpenSSH keypair bastion host"]
+				role_51c29b4d -> task_59be20db [label="46 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_task_59be20db labeltooltip="46 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="46 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+				task_d5d6be1a [label="kubeinit.kubeinit.kubeinit_prepare : Set authorized_key hostvar for bastion host" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_d5d6be1a shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set authorized_key hostvar for bastion host"]
+				role_51c29b4d -> task_d5d6be1a [label="47 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_task_d5d6be1a labeltooltip="47 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="47 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+				task_efdb2273 [label="kubeinit.kubeinit.kubeinit_prepare : Add bastion host authorized key to cluster authorized_keys" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_efdb2273 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add bastion host authorized key to cluster authorized_keys"]
+				role_51c29b4d -> task_efdb2273 [label="48 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_task_efdb2273 labeltooltip="48 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="48 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+				task_0cb5ccf7 [label="kubeinit.kubeinit.kubeinit_prepare : Set all cluster hypervisors fact" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_0cb5ccf7 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Set all cluster hypervisors fact"]
+				role_51c29b4d -> task_0cb5ccf7 [label="49 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_task_0cb5ccf7 labeltooltip="49 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="49 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+				task_5daa598c [label="kubeinit.kubeinit.kubeinit_prepare : Update kubeinit_cluster_hostvars" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_5daa598c shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Update kubeinit_cluster_hostvars"]
+				role_51c29b4d -> task_5daa598c [label="50 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_task_5daa598c labeltooltip="50 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="50 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+				task_67740e7d [label="kubeinit.kubeinit.kubeinit_prepare : Add all cluster authorized keys to all hypervisors" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_67740e7d shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add all cluster authorized keys to all hypervisors"]
+				role_51c29b4d -> task_67740e7d [label="51 " color="#a95123" fontcolor="#a95123" id=edge_task_67740e7d labeltooltip="51 " tooltip="51 "]
+				task_e025386b [label="kubeinit.kubeinit.kubeinit_prepare : Define additional host, node and services facts" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_e025386b shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Define additional host, node and services facts"]
+				role_51c29b4d -> task_e025386b [label="52 " color="#a95123" fontcolor="#a95123" id=edge_task_e025386b labeltooltip="52 " tooltip="52 "]
+				task_31290e58 [label="kubeinit.kubeinit.kubeinit_prepare : Add ssh ProxyCommand option for all nodes" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=task_31290e58 shape=octagon tooltip="kubeinit.kubeinit.kubeinit_prepare : Add ssh ProxyCommand option for all nodes"]
+				role_51c29b4d -> task_31290e58 [label="53 " color="#a95123" fontcolor="#a95123" id=edge_task_31290e58 labeltooltip="53 " tooltip="53 "]
 			}
 		}
-		play_29c56fcd -> block_c287d0e2 [label=2 color="#6303c9" fontcolor="#6303c9" id=edge_block_c287d0e2 labeltooltip=2 tooltip=2]
-		subgraph cluster_block_c287d0e2 {
-			block_c287d0e2 [label="[block] Cleanup hypervisors" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_c287d0e2 labeltooltip="Cleanup hypervisors" shape=box tooltip="Cleanup hypervisors"]
-			block_c287d0e2 -> role_dea51919 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_dea51919 labeltooltip="1 " tooltip="1 "]
+		play_f9412831 -> block_f6355e86 [label=2 color="#a95123" fontcolor="#a95123" id=edge_block_f6355e86 labeltooltip=2 tooltip=2]
+		subgraph cluster_block_f6355e86 {
+			block_f6355e86 [label="[block] Cleanup hypervisors" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_f6355e86 labeltooltip="Cleanup hypervisors" shape=box tooltip="Cleanup hypervisors"]
+			block_f6355e86 -> role_30790ee7 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_30790ee7 labeltooltip="1 " tooltip="1 "]
 			subgraph "task-cleanup-hypervisors" {
-				role_dea51919 [label="[role] task-cleanup-hypervisors" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_dea51919 tooltip="task-cleanup-hypervisors"]
-				role_dea51919 -> role_2ee77a3c [label="1 [when: not environment_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_2ee77a3c labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
+				role_30790ee7 [label="[role] task-cleanup-hypervisors" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_30790ee7 tooltip="task-cleanup-hypervisors"]
+				role_30790ee7 -> role_1ec3db4d [label="1 [when: not environment_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_1ec3db4d labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
 				subgraph "Prepare environment if not prepared" {
-					role_2ee77a3c [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#6303c9" id=role_2ee77a3c tooltip="Prepare environment if not prepared"]
-					role_2ee77a3c -> role_4f134ff7 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_4f134ff7 labeltooltip="1 " tooltip="1 "]
+					role_1ec3db4d [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#a95123" id=role_1ec3db4d tooltip="Prepare environment if not prepared"]
+					role_1ec3db4d -> role_5d4b3d00 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_5d4b3d00 labeltooltip="1 " tooltip="1 "]
 					subgraph "Gather kubeinit secrets" {
-						role_4f134ff7 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_4f134ff7 tooltip="Gather kubeinit secrets"]
+						role_5d4b3d00 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_5d4b3d00 tooltip="Gather kubeinit secrets"]
 					}
-					role_2ee77a3c -> role_b8f96075 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_b8f96075 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+					role_1ec3db4d -> role_88ef3d03 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_88ef3d03 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 					subgraph "Gather facts from bastion_host if needed" {
-						role_b8f96075 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_b8f96075 tooltip="Gather facts from bastion_host if needed"]
+						role_88ef3d03 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_88ef3d03 tooltip="Gather facts from bastion_host if needed"]
 					}
 				}
-				role_dea51919 -> role_f985706c [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_f985706c labeltooltip="2 " tooltip="2 "]
+				role_30790ee7 -> role_f16400a3 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_f16400a3 labeltooltip="2 " tooltip="2 "]
 				subgraph "Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" {
-					role_f985706c [label="[role] Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#6303c9" id=role_f985706c tooltip="Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage"]
+					role_f16400a3 [label="[role] Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#a95123" id=role_f16400a3 tooltip="Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage"]
 				}
 			}
 		}
-		play_29c56fcd -> block_7f2e1a70 [label=3 color="#6303c9" fontcolor="#6303c9" id=edge_block_7f2e1a70 labeltooltip=3 tooltip=3]
-		subgraph cluster_block_7f2e1a70 {
-			block_7f2e1a70 [label="[block] Run validations on cluster resources" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_7f2e1a70 labeltooltip="Run validations on cluster resources" shape=box tooltip="Run validations on cluster resources"]
-			block_7f2e1a70 -> role_83422185 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_83422185 labeltooltip="1 " tooltip="1 "]
+		play_f9412831 -> block_185f536b [label=3 color="#a95123" fontcolor="#a95123" id=edge_block_185f536b labeltooltip=3 tooltip=3]
+		subgraph cluster_block_185f536b {
+			block_185f536b [label="[block] Run validations on cluster resources" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_185f536b labeltooltip="Run validations on cluster resources" shape=box tooltip="Run validations on cluster resources"]
+			block_185f536b -> role_dbffc30e [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_dbffc30e labeltooltip="1 " tooltip="1 "]
 			subgraph "task-run-validations" {
-				role_83422185 [label="[role] task-run-validations" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_83422185 tooltip="task-run-validations"]
-				role_83422185 -> role_40407bb9 [label="1 [when: not hypervisors_cleaned]" color="#6303c9" fontcolor="#6303c9" id=edge_role_40407bb9 labeltooltip="1 [when: not hypervisors_cleaned]" tooltip="1 [when: not hypervisors_cleaned]"]
+				role_dbffc30e [label="[role] task-run-validations" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_dbffc30e tooltip="task-run-validations"]
+				role_dbffc30e -> role_2e263376 [label="1 [when: not hypervisors_cleaned]" color="#a95123" fontcolor="#a95123" id=edge_role_2e263376 labeltooltip="1 [when: not hypervisors_cleaned]" tooltip="1 [when: not hypervisors_cleaned]"]
 				subgraph "Cleanup hypervisors if needed" {
-					role_40407bb9 [label="[role] Cleanup hypervisors if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_validations/tasks/main.yml" color="#6303c9" id=role_40407bb9 tooltip="Cleanup hypervisors if needed"]
-					role_40407bb9 -> role_fdace52d [label="1 [when: not environment_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_fdace52d labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
+					role_2e263376 [label="[role] Cleanup hypervisors if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_validations/tasks/main.yml" color="#a95123" id=role_2e263376 tooltip="Cleanup hypervisors if needed"]
+					role_2e263376 -> role_75c89533 [label="1 [when: not environment_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_75c89533 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
 					subgraph "Prepare environment if not prepared" {
-						role_fdace52d [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#6303c9" id=role_fdace52d tooltip="Prepare environment if not prepared"]
-						role_fdace52d -> role_b4100fa2 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_b4100fa2 labeltooltip="1 " tooltip="1 "]
+						role_75c89533 [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#a95123" id=role_75c89533 tooltip="Prepare environment if not prepared"]
+						role_75c89533 -> role_4fa2cea9 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_4fa2cea9 labeltooltip="1 " tooltip="1 "]
 						subgraph "Gather kubeinit secrets" {
-							role_b4100fa2 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_b4100fa2 tooltip="Gather kubeinit secrets"]
+							role_4fa2cea9 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_4fa2cea9 tooltip="Gather kubeinit secrets"]
 						}
-						role_fdace52d -> role_195537d8 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_195537d8 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+						role_75c89533 -> role_f2342053 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_f2342053 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 						subgraph "Gather facts from bastion_host if needed" {
-							role_195537d8 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_195537d8 tooltip="Gather facts from bastion_host if needed"]
+							role_f2342053 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_f2342053 tooltip="Gather facts from bastion_host if needed"]
 						}
 					}
-					role_40407bb9 -> role_0941d5dd [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_0941d5dd labeltooltip="2 " tooltip="2 "]
+					role_2e263376 -> role_a2d0b16f [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_a2d0b16f labeltooltip="2 " tooltip="2 "]
 					subgraph "Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" {
-						role_0941d5dd [label="[role] Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#6303c9" id=role_0941d5dd tooltip="Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage"]
+						role_a2d0b16f [label="[role] Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#a95123" id=role_a2d0b16f tooltip="Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage"]
 					}
 				}
 			}
 		}
-		play_29c56fcd -> block_b533cdbf [label=4 color="#6303c9" fontcolor="#6303c9" id=edge_block_b533cdbf labeltooltip=4 tooltip=4]
-		subgraph cluster_block_b533cdbf {
-			block_b533cdbf [label="[block] Create the cluster network resources" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_b533cdbf labeltooltip="Create the cluster network resources" shape=box tooltip="Create the cluster network resources"]
-			block_b533cdbf -> role_d7a750f5 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_d7a750f5 labeltooltip="1 " tooltip="1 "]
+		play_f9412831 -> block_fce71421 [label=4 color="#a95123" fontcolor="#a95123" id=edge_block_fce71421 labeltooltip=4 tooltip=4]
+		subgraph cluster_block_fce71421 {
+			block_fce71421 [label="[block] Create the cluster network resources" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_fce71421 labeltooltip="Create the cluster network resources" shape=box tooltip="Create the cluster network resources"]
+			block_fce71421 -> role_429143a8 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_429143a8 labeltooltip="1 " tooltip="1 "]
 			subgraph "task-create-network" {
-				role_d7a750f5 [label="[role] task-create-network" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_d7a750f5 tooltip="task-create-network"]
-				role_d7a750f5 -> role_564302cf [label="1 [when: not hypervisors_cleaned]" color="#6303c9" fontcolor="#6303c9" id=edge_role_564302cf labeltooltip="1 [when: not hypervisors_cleaned]" tooltip="1 [when: not hypervisors_cleaned]"]
+				role_429143a8 [label="[role] task-create-network" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_429143a8 tooltip="task-create-network"]
+				role_429143a8 -> role_eff9a1bf [label="1 [when: not hypervisors_cleaned]" color="#a95123" fontcolor="#a95123" id=edge_role_eff9a1bf labeltooltip="1 [when: not hypervisors_cleaned]" tooltip="1 [when: not hypervisors_cleaned]"]
 				subgraph "Cleanup hypervisors if needed" {
-					role_564302cf [label="[role] Cleanup hypervisors if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/create_network.yml" color="#6303c9" id=role_564302cf tooltip="Cleanup hypervisors if needed"]
-					role_564302cf -> role_958a0238 [label="1 [when: not environment_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_958a0238 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
+					role_eff9a1bf [label="[role] Cleanup hypervisors if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/create_network.yml" color="#a95123" id=role_eff9a1bf tooltip="Cleanup hypervisors if needed"]
+					role_eff9a1bf -> role_c3183de2 [label="1 [when: not environment_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_c3183de2 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
 					subgraph "Prepare environment if not prepared" {
-						role_958a0238 [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#6303c9" id=role_958a0238 tooltip="Prepare environment if not prepared"]
-						role_958a0238 -> role_1519452a [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_1519452a labeltooltip="1 " tooltip="1 "]
+						role_c3183de2 [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#a95123" id=role_c3183de2 tooltip="Prepare environment if not prepared"]
+						role_c3183de2 -> role_bf48aadd [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_bf48aadd labeltooltip="1 " tooltip="1 "]
 						subgraph "Gather kubeinit secrets" {
-							role_1519452a [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_1519452a tooltip="Gather kubeinit secrets"]
+							role_bf48aadd [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_bf48aadd tooltip="Gather kubeinit secrets"]
 						}
-						role_958a0238 -> role_5628fe28 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_5628fe28 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+						role_c3183de2 -> role_b300e554 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_b300e554 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 						subgraph "Gather facts from bastion_host if needed" {
-							role_5628fe28 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_5628fe28 tooltip="Gather facts from bastion_host if needed"]
+							role_b300e554 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_b300e554 tooltip="Gather facts from bastion_host if needed"]
 						}
 					}
-					role_564302cf -> role_dc4ef095 [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_dc4ef095 labeltooltip="2 " tooltip="2 "]
+					role_eff9a1bf -> role_7dbed232 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_7dbed232 labeltooltip="2 " tooltip="2 "]
 					subgraph "Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" {
-						role_dc4ef095 [label="[role] Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#6303c9" id=role_dc4ef095 tooltip="Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage"]
+						role_7dbed232 [label="[role] Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/cleanup_hypervisors.yml" color="#a95123" id=role_7dbed232 tooltip="Cleanup the OVN network and other libvirt resources -- hosts, networks, vms, storage"]
 					}
 				}
 			}
 		}
-		play_29c56fcd -> block_9ca8a195 [label=5 color="#6303c9" fontcolor="#6303c9" id=edge_block_9ca8a195 labeltooltip=5 tooltip=5]
-		subgraph cluster_block_9ca8a195 {
-			block_9ca8a195 [label="[block] Create services the cluster will need" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_9ca8a195 labeltooltip="Create services the cluster will need" shape=box tooltip="Create services the cluster will need"]
-			block_9ca8a195 -> role_79097921 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_79097921 labeltooltip="1 " tooltip="1 "]
+		play_f9412831 -> block_67dbc45c [label=5 color="#a95123" fontcolor="#a95123" id=edge_block_67dbc45c labeltooltip=5 tooltip=5]
+		subgraph cluster_block_67dbc45c {
+			block_67dbc45c [label="[block] Create services the cluster will need" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_67dbc45c labeltooltip="Create services the cluster will need" shape=box tooltip="Create services the cluster will need"]
+			block_67dbc45c -> role_bb25f88e [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_bb25f88e labeltooltip="1 " tooltip="1 "]
 			subgraph "task-create-services" {
-				role_79097921 [label="[role] task-create-services" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_79097921 tooltip="task-create-services"]
-				role_79097921 -> role_91f6ced8 [label="1 [when: not environment_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_91f6ced8 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
+				role_bb25f88e [label="[role] task-create-services" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_bb25f88e tooltip="task-create-services"]
+				role_bb25f88e -> role_742b1711 [label="1 [when: not environment_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_742b1711 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
 				subgraph "Prepare environment if not prepared" {
-					role_91f6ced8 [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/main.yml" color="#6303c9" id=role_91f6ced8 tooltip="Prepare environment if not prepared"]
-					role_91f6ced8 -> role_dbb0e6a9 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_dbb0e6a9 labeltooltip="1 " tooltip="1 "]
+					role_742b1711 [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/main.yml" color="#a95123" id=role_742b1711 tooltip="Prepare environment if not prepared"]
+					role_742b1711 -> role_20337507 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_20337507 labeltooltip="1 " tooltip="1 "]
 					subgraph "Gather kubeinit secrets" {
-						role_dbb0e6a9 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_dbb0e6a9 tooltip="Gather kubeinit secrets"]
+						role_20337507 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_20337507 tooltip="Gather kubeinit secrets"]
 					}
-					role_91f6ced8 -> role_93c7cd8f [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_93c7cd8f labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+					role_742b1711 -> role_094d54c6 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_094d54c6 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 					subgraph "Gather facts from bastion_host if needed" {
-						role_93c7cd8f [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_93c7cd8f tooltip="Gather facts from bastion_host if needed"]
+						role_094d54c6 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_094d54c6 tooltip="Gather facts from bastion_host if needed"]
 					}
 				}
-				role_79097921 -> role_e2fa2345 [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_e2fa2345 labeltooltip="2 " tooltip="2 "]
+				role_bb25f88e -> role_c90260d1 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_c90260d1 labeltooltip="2 " tooltip="2 "]
 				subgraph "Prepare podman" {
-					role_e2fa2345 [label="[role] Prepare podman" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/00_create_service_pod.yml" color="#6303c9" id=role_e2fa2345 tooltip="Prepare podman"]
+					role_c90260d1 [label="[role] Prepare podman" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/00_create_service_pod.yml" color="#a95123" id=role_c90260d1 tooltip="Prepare podman"]
 				}
-				role_79097921 -> role_9c32549e [label="3 [when: 'bind' in hostvars[kubeinit_deployment_node_name].services]" color="#6303c9" fontcolor="#6303c9" id=edge_role_9c32549e labeltooltip="3 [when: 'bind' in hostvars[kubeinit_deployment_node_name].services]" tooltip="3 [when: 'bind' in hostvars[kubeinit_deployment_node_name].services]"]
+				role_bb25f88e -> role_bdbb8bd5 [label="3 [when: 'bind' in hostvars[kubeinit_deployment_node_name].services]" color="#a95123" fontcolor="#a95123" id=edge_role_bdbb8bd5 labeltooltip="3 [when: 'bind' in hostvars[kubeinit_deployment_node_name].services]" tooltip="3 [when: 'bind' in hostvars[kubeinit_deployment_node_name].services]"]
 				subgraph "Configure Bind" {
-					role_9c32549e [label="[role] Configure Bind" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#6303c9" id=role_9c32549e tooltip="Configure Bind"]
-					role_9c32549e -> role_5148651e [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_5148651e labeltooltip="1 " tooltip="1 "]
+					role_bdbb8bd5 [label="[role] Configure Bind" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#a95123" id=role_bdbb8bd5 tooltip="Configure Bind"]
+					role_bdbb8bd5 -> role_657d05b6 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_657d05b6 labeltooltip="1 " tooltip="1 "]
 					subgraph "Create systemd service for podman container" {
-						role_5148651e [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_bind/tasks/main.yml" color="#6303c9" id=role_5148651e tooltip="Create systemd service for podman container"]
+						role_657d05b6 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_bind/tasks/main.yml" color="#a95123" id=role_657d05b6 tooltip="Create systemd service for podman container"]
 					}
 				}
-				role_79097921 -> role_2199a55d [label="4 [when: 'dnsmasq' in hostvars[kubeinit_deployment_node_name].services]" color="#6303c9" fontcolor="#6303c9" id=edge_role_2199a55d labeltooltip="4 [when: 'dnsmasq' in hostvars[kubeinit_deployment_node_name].services]" tooltip="4 [when: 'dnsmasq' in hostvars[kubeinit_deployment_node_name].services]"]
+				role_bb25f88e -> role_396f75a9 [label="4 [when: 'dnsmasq' in hostvars[kubeinit_deployment_node_name].services]" color="#a95123" fontcolor="#a95123" id=edge_role_396f75a9 labeltooltip="4 [when: 'dnsmasq' in hostvars[kubeinit_deployment_node_name].services]" tooltip="4 [when: 'dnsmasq' in hostvars[kubeinit_deployment_node_name].services]"]
 				subgraph "Configure Dnsmasq" {
-					role_2199a55d [label="[role] Configure Dnsmasq" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#6303c9" id=role_2199a55d tooltip="Configure Dnsmasq"]
-					role_2199a55d -> role_1de5b875 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_1de5b875 labeltooltip="1 " tooltip="1 "]
+					role_396f75a9 [label="[role] Configure Dnsmasq" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#a95123" id=role_396f75a9 tooltip="Configure Dnsmasq"]
+					role_396f75a9 -> role_f430d94b [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_f430d94b labeltooltip="1 " tooltip="1 "]
 					subgraph "Create systemd service for podman container" {
-						role_1de5b875 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_dnsmasq/tasks/main.yml" color="#6303c9" id=role_1de5b875 tooltip="Create systemd service for podman container"]
+						role_f430d94b [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_dnsmasq/tasks/main.yml" color="#a95123" id=role_f430d94b tooltip="Create systemd service for podman container"]
 					}
 				}
-				role_79097921 -> role_7e726b4a [label="5 [when: 'haproxy' in hostvars[kubeinit_deployment_node_name].services]" color="#6303c9" fontcolor="#6303c9" id=edge_role_7e726b4a labeltooltip="5 [when: 'haproxy' in hostvars[kubeinit_deployment_node_name].services]" tooltip="5 [when: 'haproxy' in hostvars[kubeinit_deployment_node_name].services]"]
+				role_bb25f88e -> role_52aeebd7 [label="5 [when: 'haproxy' in hostvars[kubeinit_deployment_node_name].services]" color="#a95123" fontcolor="#a95123" id=edge_role_52aeebd7 labeltooltip="5 [when: 'haproxy' in hostvars[kubeinit_deployment_node_name].services]" tooltip="5 [when: 'haproxy' in hostvars[kubeinit_deployment_node_name].services]"]
 				subgraph "Configure HAProxy" {
-					role_7e726b4a [label="[role] Configure HAProxy" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#6303c9" id=role_7e726b4a tooltip="Configure HAProxy"]
-					role_7e726b4a -> role_af574004 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_af574004 labeltooltip="1 " tooltip="1 "]
+					role_52aeebd7 [label="[role] Configure HAProxy" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#a95123" id=role_52aeebd7 tooltip="Configure HAProxy"]
+					role_52aeebd7 -> role_255ddd75 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_255ddd75 labeltooltip="1 " tooltip="1 "]
 					subgraph "Create systemd service for podman container" {
-						role_af574004 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_haproxy/tasks/main.yml" color="#6303c9" id=role_af574004 tooltip="Create systemd service for podman container"]
+						role_255ddd75 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_haproxy/tasks/main.yml" color="#a95123" id=role_255ddd75 tooltip="Create systemd service for podman container"]
 					}
 				}
-				role_79097921 -> role_d96830bb [label="6 [when: 'nexus' in hostvars[kubeinit_deployment_node_name].services]" color="#6303c9" fontcolor="#6303c9" id=edge_role_d96830bb labeltooltip="6 [when: 'nexus' in hostvars[kubeinit_deployment_node_name].services]" tooltip="6 [when: 'nexus' in hostvars[kubeinit_deployment_node_name].services]"]
+				role_bb25f88e -> role_79a5923c [label="6 [when: 'nexus' in hostvars[kubeinit_deployment_node_name].services]" color="#a95123" fontcolor="#a95123" id=edge_role_79a5923c labeltooltip="6 [when: 'nexus' in hostvars[kubeinit_deployment_node_name].services]" tooltip="6 [when: 'nexus' in hostvars[kubeinit_deployment_node_name].services]"]
 				subgraph "Configure Nexus" {
-					role_d96830bb [label="[role] Configure Nexus" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#6303c9" id=role_d96830bb tooltip="Configure Nexus"]
-					role_d96830bb -> role_3bd92a74 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_3bd92a74 labeltooltip="1 " tooltip="1 "]
+					role_79a5923c [label="[role] Configure Nexus" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#a95123" id=role_79a5923c tooltip="Configure Nexus"]
+					role_79a5923c -> role_efb6a7df [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_efb6a7df labeltooltip="1 " tooltip="1 "]
 					subgraph "Create systemd service for podman container" {
-						role_3bd92a74 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_nexus/tasks/main.yml" color="#6303c9" id=role_3bd92a74 tooltip="Create systemd service for podman container"]
+						role_efb6a7df [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_nexus/tasks/main.yml" color="#a95123" id=role_efb6a7df tooltip="Create systemd service for podman container"]
 					}
 				}
-				role_79097921 -> role_f16780cb [label="7 [when: 'apache' in hostvars[kubeinit_deployment_node_name].services]" color="#6303c9" fontcolor="#6303c9" id=edge_role_f16780cb labeltooltip="7 [when: 'apache' in hostvars[kubeinit_deployment_node_name].services]" tooltip="7 [when: 'apache' in hostvars[kubeinit_deployment_node_name].services]"]
+				role_bb25f88e -> role_988ec795 [label="7 [when: 'apache' in hostvars[kubeinit_deployment_node_name].services]" color="#a95123" fontcolor="#a95123" id=edge_role_988ec795 labeltooltip="7 [when: 'apache' in hostvars[kubeinit_deployment_node_name].services]" tooltip="7 [when: 'apache' in hostvars[kubeinit_deployment_node_name].services]"]
 				subgraph "Configure Apache" {
-					role_f16780cb [label="[role] Configure Apache" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#6303c9" id=role_f16780cb tooltip="Configure Apache"]
-					role_f16780cb -> role_a7dfd2f2 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_a7dfd2f2 labeltooltip="1 " tooltip="1 "]
+					role_988ec795 [label="[role] Configure Apache" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#a95123" id=role_988ec795 tooltip="Configure Apache"]
+					role_988ec795 -> role_cde49559 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_cde49559 labeltooltip="1 " tooltip="1 "]
 					subgraph "Create systemd service for podman container" {
-						role_a7dfd2f2 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_apache/tasks/main.yml" color="#6303c9" id=role_a7dfd2f2 tooltip="Create systemd service for podman container"]
+						role_cde49559 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_apache/tasks/main.yml" color="#a95123" id=role_cde49559 tooltip="Create systemd service for podman container"]
 					}
 				}
-				role_79097921 -> role_29fe64de [label="8 [when: 'registry' in hostvars[kubeinit_deployment_node_name].services]" color="#6303c9" fontcolor="#6303c9" id=edge_role_29fe64de labeltooltip="8 [when: 'registry' in hostvars[kubeinit_deployment_node_name].services]" tooltip="8 [when: 'registry' in hostvars[kubeinit_deployment_node_name].services]"]
+				role_bb25f88e -> role_0a2929c6 [label="8 [when: 'registry' in hostvars[kubeinit_deployment_node_name].services]" color="#a95123" fontcolor="#a95123" id=edge_role_0a2929c6 labeltooltip="8 [when: 'registry' in hostvars[kubeinit_deployment_node_name].services]" tooltip="8 [when: 'registry' in hostvars[kubeinit_deployment_node_name].services]"]
 				subgraph "Configure a local container image registry" {
-					role_29fe64de [label="[role] Configure a local container image registry" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#6303c9" id=role_29fe64de tooltip="Configure a local container image registry"]
-					role_29fe64de -> role_b117bb6b [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_b117bb6b labeltooltip="1 " tooltip="1 "]
+					role_0a2929c6 [label="[role] Configure a local container image registry" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/start_services_containers.yml" color="#a95123" id=role_0a2929c6 tooltip="Configure a local container image registry"]
+					role_0a2929c6 -> role_643c1ad1 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_643c1ad1 labeltooltip="1 " tooltip="1 "]
 					subgraph "Create systemd service for podman container" {
-						role_b117bb6b [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_registry/tasks/main.yml" color="#6303c9" id=role_b117bb6b tooltip="Create systemd service for podman container"]
+						role_643c1ad1 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_registry/tasks/main.yml" color="#a95123" id=role_643c1ad1 tooltip="Create systemd service for podman container"]
 					}
 				}
 			}
 		}
-		play_29c56fcd -> block_77a3c4b6 [label=6 color="#6303c9" fontcolor="#6303c9" id=edge_block_77a3c4b6 labeltooltip=6 tooltip=6]
-		subgraph cluster_block_77a3c4b6 {
-			block_77a3c4b6 [label="[block] Prepare to deploy the cluster" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_77a3c4b6 labeltooltip="Prepare to deploy the cluster" shape=box tooltip="Prepare to deploy the cluster"]
-			block_77a3c4b6 -> role_be6b7d97 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_be6b7d97 labeltooltip="1 " tooltip="1 "]
+		play_f9412831 -> block_adf906f1 [label=6 color="#a95123" fontcolor="#a95123" id=edge_block_adf906f1 labeltooltip=6 tooltip=6]
+		subgraph cluster_block_adf906f1 {
+			block_adf906f1 [label="[block] Prepare to deploy the cluster" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_adf906f1 labeltooltip="Prepare to deploy the cluster" shape=box tooltip="Prepare to deploy the cluster"]
+			block_adf906f1 -> role_4de38430 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_4de38430 labeltooltip="1 " tooltip="1 "]
 			subgraph "task-prepare-cluster" {
-				role_be6b7d97 [label="[role] task-prepare-cluster" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_be6b7d97 tooltip="task-prepare-cluster"]
-				role_be6b7d97 -> role_6b6b65e4 [label="1 [when: not services_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_6b6b65e4 labeltooltip="1 [when: not services_prepared]" tooltip="1 [when: not services_prepared]"]
+				role_4de38430 [label="[role] task-prepare-cluster" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_4de38430 tooltip="task-prepare-cluster"]
+				role_4de38430 -> role_4337b685 [label="1 [when: not services_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_4337b685 labeltooltip="1 [when: not services_prepared]" tooltip="1 [when: not services_prepared]"]
 				subgraph "Prepare services if needed" {
-					role_6b6b65e4 [label="[role] Prepare services if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_cluster.yml" color="#6303c9" id=role_6b6b65e4 tooltip="Prepare services if needed"]
-					role_6b6b65e4 -> role_2e264c19 [label="1 [when: not environment_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_2e264c19 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
+					role_4337b685 [label="[role] Prepare services if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_cluster.yml" color="#a95123" id=role_4337b685 tooltip="Prepare services if needed"]
+					role_4337b685 -> role_c3eae0e6 [label="1 [when: not environment_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_c3eae0e6 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
 					subgraph "Prepare environment if needed" {
-						role_2e264c19 [label="[role] Prepare environment if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#6303c9" id=role_2e264c19 tooltip="Prepare environment if needed"]
-						role_2e264c19 -> role_6aeed3f7 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_6aeed3f7 labeltooltip="1 " tooltip="1 "]
+						role_c3eae0e6 [label="[role] Prepare environment if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#a95123" id=role_c3eae0e6 tooltip="Prepare environment if needed"]
+						role_c3eae0e6 -> role_9fc741d2 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_9fc741d2 labeltooltip="1 " tooltip="1 "]
 						subgraph "Gather kubeinit secrets" {
-							role_6aeed3f7 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_6aeed3f7 tooltip="Gather kubeinit secrets"]
+							role_9fc741d2 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_9fc741d2 tooltip="Gather kubeinit secrets"]
 						}
-						role_2e264c19 -> role_324a7b1c [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_324a7b1c labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+						role_c3eae0e6 -> role_644f8495 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_644f8495 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 						subgraph "Gather facts from bastion_host if needed" {
-							role_324a7b1c [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_324a7b1c tooltip="Gather facts from bastion_host if needed"]
+							role_644f8495 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_644f8495 tooltip="Gather facts from bastion_host if needed"]
 						}
 					}
-					role_6b6b65e4 -> role_2c15a369 [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_2c15a369 labeltooltip="2 " tooltip="2 "]
+					role_4337b685 -> role_29ed844c [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_29ed844c labeltooltip="2 " tooltip="2 "]
 					subgraph "Gather network and host facts for guest" {
-						role_2c15a369 [label="[role] Gather network and host facts for guest" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#6303c9" id=role_2c15a369 tooltip="Gather network and host facts for guest"]
+						role_29ed844c [label="[role] Gather network and host facts for guest" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#a95123" id=role_29ed844c tooltip="Gather network and host facts for guest"]
 					}
 				}
-				role_be6b7d97 -> role_2a59650a [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_2a59650a labeltooltip="2 " tooltip="2 "]
+				role_4de38430 -> role_747079c3 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_747079c3 labeltooltip="2 " tooltip="2 "]
 				subgraph "Delegate to the distro role to prepare the cluster" {
-					role_2a59650a [label="[role] Delegate to the distro role to prepare the cluster" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_cluster.yml" color="#6303c9" id=role_2a59650a tooltip="Delegate to the distro role to prepare the cluster"]
-					role_2a59650a -> role_9a0396a6 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_9a0396a6 labeltooltip="1 " tooltip="1 "]
+					role_747079c3 [label="[role] Delegate to the distro role to prepare the cluster" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_cluster.yml" color="#a95123" id=role_747079c3 tooltip="Delegate to the distro role to prepare the cluster"]
+					role_747079c3 -> role_0903cb38 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_0903cb38 labeltooltip="1 " tooltip="1 "]
 					subgraph "Setup the cluster provision container" {
-						role_9a0396a6 [label="[role] Setup the cluster provision container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/prepare_cluster.yml" color="#6303c9" id=role_9a0396a6 tooltip="Setup the cluster provision container"]
-						role_9a0396a6 -> role_550a1900 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_550a1900 labeltooltip="1 " tooltip="1 "]
+						role_0903cb38 [label="[role] Setup the cluster provision container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/prepare_cluster.yml" color="#a95123" id=role_0903cb38 tooltip="Setup the cluster provision container"]
+						role_0903cb38 -> role_974ea4c3 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_974ea4c3 labeltooltip="1 " tooltip="1 "]
 						subgraph "Create systemd service for podman container" {
-							role_550a1900 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/create_provision_container.yml" color="#6303c9" id=role_550a1900 tooltip="Create systemd service for podman container"]
+							role_974ea4c3 [label="[role] Create systemd service for podman container" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/create_provision_container.yml" color="#a95123" id=role_974ea4c3 tooltip="Create systemd service for podman container"]
 						}
-						role_9a0396a6 -> role_e9169b18 [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_e9169b18 labeltooltip="2 " tooltip="2 "]
+						role_0903cb38 -> role_81020727 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_81020727 labeltooltip="2 " tooltip="2 "]
 						subgraph "Gather network and host facts for provision service" {
-							role_e9169b18 [label="[role] Gather network and host facts for provision service" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/create_provision_container.yml" color="#6303c9" id=role_e9169b18 tooltip="Gather network and host facts for provision service"]
+							role_81020727 [label="[role] Gather network and host facts for provision service" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/create_provision_container.yml" color="#a95123" id=role_81020727 tooltip="Gather network and host facts for provision service"]
 						}
 					}
 				}
 			}
 		}
-		play_29c56fcd -> block_bf5b41a7 [label=7 color="#6303c9" fontcolor="#6303c9" id=edge_block_bf5b41a7 labeltooltip=7 tooltip=7]
-		subgraph cluster_block_bf5b41a7 {
-			block_bf5b41a7 [label="[block] Download cloud images" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_bf5b41a7 labeltooltip="Download cloud images" shape=box tooltip="Download cloud images"]
-			block_bf5b41a7 -> role_640200a4 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_640200a4 labeltooltip="1 " tooltip="1 "]
+		play_f9412831 -> block_3415ac8c [label=7 color="#a95123" fontcolor="#a95123" id=edge_block_3415ac8c labeltooltip=7 tooltip=7]
+		subgraph cluster_block_3415ac8c {
+			block_3415ac8c [label="[block] Download cloud images" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_3415ac8c labeltooltip="Download cloud images" shape=box tooltip="Download cloud images"]
+			block_3415ac8c -> role_46dc7f4a [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_46dc7f4a labeltooltip="1 " tooltip="1 "]
 			subgraph "task-download-images" {
-				role_640200a4 [label="[role] task-download-images" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_640200a4 tooltip="task-download-images"]
-				role_640200a4 -> role_6f58e23e [label="1 [when: not environment_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_6f58e23e labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
+				role_46dc7f4a [label="[role] task-download-images" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_46dc7f4a tooltip="task-download-images"]
+				role_46dc7f4a -> role_446668cc [label="1 [when: not environment_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_446668cc labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
 				subgraph "Prepare environment if not prepared" {
-					role_6f58e23e [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/download_cloud_images.yml" color="#6303c9" id=role_6f58e23e tooltip="Prepare environment if not prepared"]
-					role_6f58e23e -> role_a6f32a7c [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_a6f32a7c labeltooltip="1 " tooltip="1 "]
+					role_446668cc [label="[role] Prepare environment if not prepared" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/download_cloud_images.yml" color="#a95123" id=role_446668cc tooltip="Prepare environment if not prepared"]
+					role_446668cc -> role_207752c9 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_207752c9 labeltooltip="1 " tooltip="1 "]
 					subgraph "Gather kubeinit secrets" {
-						role_a6f32a7c [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_a6f32a7c tooltip="Gather kubeinit secrets"]
+						role_207752c9 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_207752c9 tooltip="Gather kubeinit secrets"]
 					}
-					role_6f58e23e -> role_c17efd79 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_c17efd79 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+					role_446668cc -> role_ed738872 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_ed738872 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 					subgraph "Gather facts from bastion_host if needed" {
-						role_c17efd79 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_c17efd79 tooltip="Gather facts from bastion_host if needed"]
+						role_ed738872 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_ed738872 tooltip="Gather facts from bastion_host if needed"]
 					}
 				}
 			}
 		}
-		play_29c56fcd -> block_fd4ec627 [label=8 color="#6303c9" fontcolor="#6303c9" id=edge_block_fd4ec627 labeltooltip=8 tooltip=8]
-		subgraph cluster_block_fd4ec627 {
-			block_fd4ec627 [label="[block] Deploy the cluster" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_fd4ec627 labeltooltip="Deploy the cluster" shape=box tooltip="Deploy the cluster"]
-			block_fd4ec627 -> role_bcf34905 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_bcf34905 labeltooltip="1 " tooltip="1 "]
+		play_f9412831 -> block_01fae88b [label=8 color="#a95123" fontcolor="#a95123" id=edge_block_01fae88b labeltooltip=8 tooltip=8]
+		subgraph cluster_block_01fae88b {
+			block_01fae88b [label="[block] Deploy the cluster" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_01fae88b labeltooltip="Deploy the cluster" shape=box tooltip="Deploy the cluster"]
+			block_01fae88b -> role_61d69bc9 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_61d69bc9 labeltooltip="1 " tooltip="1 "]
 			subgraph "task-deploy-cluster" {
-				role_bcf34905 [label="[role] task-deploy-cluster" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_bcf34905 tooltip="task-deploy-cluster"]
-				role_bcf34905 -> role_18cec22c [label="1 [when: not services_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_18cec22c labeltooltip="1 [when: not services_prepared]" tooltip="1 [when: not services_prepared]"]
+				role_61d69bc9 [label="[role] task-deploy-cluster" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_61d69bc9 tooltip="task-deploy-cluster"]
+				role_61d69bc9 -> role_42c4fa2d [label="1 [when: not services_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_42c4fa2d labeltooltip="1 [when: not services_prepared]" tooltip="1 [when: not services_prepared]"]
 				subgraph "Prepare services if needed" {
-					role_18cec22c [label="[role] Prepare services if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/deploy_cluster.yml" color="#6303c9" id=role_18cec22c tooltip="Prepare services if needed"]
-					role_18cec22c -> role_035ec08b [label="1 [when: not environment_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_035ec08b labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
+					role_42c4fa2d [label="[role] Prepare services if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/deploy_cluster.yml" color="#a95123" id=role_42c4fa2d tooltip="Prepare services if needed"]
+					role_42c4fa2d -> role_4a5cad2c [label="1 [when: not environment_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_4a5cad2c labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
 					subgraph "Prepare environment if needed" {
-						role_035ec08b [label="[role] Prepare environment if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#6303c9" id=role_035ec08b tooltip="Prepare environment if needed"]
-						role_035ec08b -> role_f2c412df [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_f2c412df labeltooltip="1 " tooltip="1 "]
+						role_4a5cad2c [label="[role] Prepare environment if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#a95123" id=role_4a5cad2c tooltip="Prepare environment if needed"]
+						role_4a5cad2c -> role_140b925d [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_140b925d labeltooltip="1 " tooltip="1 "]
 						subgraph "Gather kubeinit secrets" {
-							role_f2c412df [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_f2c412df tooltip="Gather kubeinit secrets"]
+							role_140b925d [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_140b925d tooltip="Gather kubeinit secrets"]
 						}
-						role_035ec08b -> role_83dbc8d8 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_83dbc8d8 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+						role_4a5cad2c -> role_33aad96e [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_33aad96e labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 						subgraph "Gather facts from bastion_host if needed" {
-							role_83dbc8d8 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_83dbc8d8 tooltip="Gather facts from bastion_host if needed"]
+							role_33aad96e [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_33aad96e tooltip="Gather facts from bastion_host if needed"]
 						}
 					}
-					role_18cec22c -> role_cd9abd49 [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_cd9abd49 labeltooltip="2 " tooltip="2 "]
+					role_42c4fa2d -> role_9c9ba996 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_9c9ba996 labeltooltip="2 " tooltip="2 "]
 					subgraph "Gather network and host facts for guest" {
-						role_cd9abd49 [label="[role] Gather network and host facts for guest" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#6303c9" id=role_cd9abd49 tooltip="Gather network and host facts for guest"]
+						role_9c9ba996 [label="[role] Gather network and host facts for guest" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#a95123" id=role_9c9ba996 tooltip="Gather network and host facts for guest"]
 					}
 				}
-				role_bcf34905 -> role_a419045f [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_a419045f labeltooltip="2 " tooltip="2 "]
+				role_61d69bc9 -> role_55907187 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_55907187 labeltooltip="2 " tooltip="2 "]
 				subgraph "Delegate to the distro role to deploy the cluster" {
-					role_a419045f [label="[role] Delegate to the distro role to deploy the cluster" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/deploy_cluster.yml" color="#6303c9" id=role_a419045f tooltip="Delegate to the distro role to deploy the cluster"]
-					role_a419045f -> role_585f9a1d [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_585f9a1d labeltooltip="1 " tooltip="1 "]
+					role_55907187 [label="[role] Delegate to the distro role to deploy the cluster" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/deploy_cluster.yml" color="#a95123" id=role_55907187 tooltip="Delegate to the distro role to deploy the cluster"]
+					role_55907187 -> role_6b083b5b [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_6b083b5b labeltooltip="1 " tooltip="1 "]
 					subgraph "Deploy the cluster bootstrap and any other extra nodes requested" {
-						role_585f9a1d [label="[role] Deploy the cluster bootstrap and any other extra nodes requested" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/main.yml" color="#6303c9" id=role_585f9a1d tooltip="Deploy the cluster bootstrap and any other extra nodes requested"]
+						role_6b083b5b [label="[role] Deploy the cluster bootstrap and any other extra nodes requested" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/main.yml" color="#a95123" id=role_6b083b5b tooltip="Deploy the cluster bootstrap and any other extra nodes requested"]
 					}
-					role_a419045f -> role_5b4077a8 [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_5b4077a8 labeltooltip="2 " tooltip="2 "]
+					role_55907187 -> role_b8fd0214 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_b8fd0214 labeltooltip="2 " tooltip="2 "]
 					subgraph "Deploy the cluster controller nodes" {
-						role_5b4077a8 [label="[role] Deploy the cluster controller nodes" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/main.yml" color="#6303c9" id=role_5b4077a8 tooltip="Deploy the cluster controller nodes"]
+						role_b8fd0214 [label="[role] Deploy the cluster controller nodes" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/main.yml" color="#a95123" id=role_b8fd0214 tooltip="Deploy the cluster controller nodes"]
 					}
-					role_a419045f -> role_bc0e1da0 [label="3 " color="#6303c9" fontcolor="#6303c9" id=edge_role_bc0e1da0 labeltooltip="3 " tooltip="3 "]
+					role_55907187 -> role_44e289da [label="3 " color="#a95123" fontcolor="#a95123" id=edge_role_44e289da labeltooltip="3 " tooltip="3 "]
 					subgraph "Deploy the cluster compute nodes" {
-						role_bc0e1da0 [label="[role] Deploy the cluster compute nodes" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/main.yml" color="#6303c9" id=role_bc0e1da0 tooltip="Deploy the cluster compute nodes"]
+						role_44e289da [label="[role] Deploy the cluster compute nodes" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/main.yml" color="#a95123" id=role_44e289da tooltip="Deploy the cluster compute nodes"]
 					}
 				}
 			}
 		}
-		play_29c56fcd -> block_a424e7de [label=9 color="#6303c9" fontcolor="#6303c9" id=edge_block_a424e7de labeltooltip=9 tooltip=9]
-		subgraph cluster_block_a424e7de {
-			block_a424e7de [label="[block] Run any post-deployment tasks" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=block_a424e7de labeltooltip="Run any post-deployment tasks" shape=box tooltip="Run any post-deployment tasks"]
-			block_a424e7de -> role_ba1219d8 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_ba1219d8 labeltooltip="1 " tooltip="1 "]
+		play_f9412831 -> block_1d9016e2 [label=9 color="#a95123" fontcolor="#a95123" id=edge_block_1d9016e2 labeltooltip=9 tooltip=9]
+		subgraph cluster_block_1d9016e2 {
+			block_1d9016e2 [label="[block] Run any post-deployment tasks" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=block_1d9016e2 labeltooltip="Run any post-deployment tasks" shape=box tooltip="Run any post-deployment tasks"]
+			block_1d9016e2 -> role_a37a3361 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_a37a3361 labeltooltip="1 " tooltip="1 "]
 			subgraph "task-post-deployment" {
-				role_ba1219d8 [label="[role] task-post-deployment" URL="/home/runner/work/kubeinit/kubeinit/kubeinit/playbook.yml" color="#6303c9" id=role_ba1219d8 tooltip="task-post-deployment"]
-				role_ba1219d8 -> role_ccd948f3 [label="1 [when: not services_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_ccd948f3 labeltooltip="1 [when: not services_prepared]" tooltip="1 [when: not services_prepared]"]
+				role_a37a3361 [label="[role] task-post-deployment" URL="/home/runner/work/kubeinit-1/kubeinit-1/kubeinit/playbook.yml" color="#a95123" id=role_a37a3361 tooltip="task-post-deployment"]
+				role_a37a3361 -> role_0ddd5336 [label="1 [when: not services_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_0ddd5336 labeltooltip="1 [when: not services_prepared]" tooltip="1 [when: not services_prepared]"]
 				subgraph "Prepare services if needed" {
-					role_ccd948f3 [label="[role] Prepare services if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/post_deployment.yml" color="#6303c9" id=role_ccd948f3 tooltip="Prepare services if needed"]
-					role_ccd948f3 -> role_9ebb94a2 [label="1 [when: not environment_prepared]" color="#6303c9" fontcolor="#6303c9" id=edge_role_9ebb94a2 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
+					role_0ddd5336 [label="[role] Prepare services if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/post_deployment.yml" color="#a95123" id=role_0ddd5336 tooltip="Prepare services if needed"]
+					role_0ddd5336 -> role_e4cf7b58 [label="1 [when: not environment_prepared]" color="#a95123" fontcolor="#a95123" id=edge_role_e4cf7b58 labeltooltip="1 [when: not environment_prepared]" tooltip="1 [when: not environment_prepared]"]
 					subgraph "Prepare environment if needed" {
-						role_9ebb94a2 [label="[role] Prepare environment if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#6303c9" id=role_9ebb94a2 tooltip="Prepare environment if needed"]
-						role_9ebb94a2 -> role_2ebd4785 [label="1 " color="#6303c9" fontcolor="#6303c9" id=edge_role_2ebd4785 labeltooltip="1 " tooltip="1 "]
+						role_e4cf7b58 [label="[role] Prepare environment if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#a95123" id=role_e4cf7b58 tooltip="Prepare environment if needed"]
+						role_e4cf7b58 -> role_ade4d3d5 [label="1 " color="#a95123" fontcolor="#a95123" id=edge_role_ade4d3d5 labeltooltip="1 " tooltip="1 "]
 						subgraph "Gather kubeinit secrets" {
-							role_2ebd4785 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#6303c9" id=role_2ebd4785 tooltip="Gather kubeinit secrets"]
+							role_ade4d3d5 [label="[role] Gather kubeinit secrets" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/gather_kubeinit_facts.yml" color="#a95123" id=role_ade4d3d5 tooltip="Gather kubeinit secrets"]
 						}
-						role_9ebb94a2 -> role_917ba5cd [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#6303c9" fontcolor="#6303c9" id=edge_role_917ba5cd labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
+						role_e4cf7b58 -> role_302f99f1 [label="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" color="#a95123" fontcolor="#a95123" id=edge_role_302f99f1 labeltooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]" tooltip="2 [when: kubeinit_bastion_host not in groups['all_hosts']]"]
 						subgraph "Gather facts from bastion_host if needed" {
-							role_917ba5cd [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#6303c9" id=role_917ba5cd tooltip="Gather facts from bastion_host if needed"]
+							role_302f99f1 [label="[role] Gather facts from bastion_host if needed" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml" color="#a95123" id=role_302f99f1 tooltip="Gather facts from bastion_host if needed"]
 						}
 					}
-					role_ccd948f3 -> role_6d61c604 [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_6d61c604 labeltooltip="2 " tooltip="2 "]
+					role_0ddd5336 -> role_fbaa9bea [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_fbaa9bea labeltooltip="2 " tooltip="2 "]
 					subgraph "Gather network and host facts for guest" {
-						role_6d61c604 [label="[role] Gather network and host facts for guest" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#6303c9" id=role_6d61c604 tooltip="Gather network and host facts for guest"]
+						role_fbaa9bea [label="[role] Gather network and host facts for guest" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_services/tasks/prepare_services.yml" color="#a95123" id=role_fbaa9bea tooltip="Gather network and host facts for guest"]
 					}
 				}
-				role_ba1219d8 -> role_6a7a0cbc [label="2 " color="#6303c9" fontcolor="#6303c9" id=edge_role_6a7a0cbc labeltooltip="2 " tooltip="2 "]
+				role_a37a3361 -> role_e2c4f449 [label="2 " color="#a95123" fontcolor="#a95123" id=edge_role_e2c4f449 labeltooltip="2 " tooltip="2 "]
 				subgraph "Delegate to distro role to run post-deployment tasks" {
-					role_6a7a0cbc [label="[role] Delegate to distro role to run post-deployment tasks" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/post_deployment.yml" color="#6303c9" id=role_6a7a0cbc tooltip="Delegate to distro role to run post-deployment tasks"]
-					role_6a7a0cbc -> role_93949915 [label="1 [when: 'nfs' in kubeinit_cluster_hostvars.services]" color="#6303c9" fontcolor="#6303c9" id=edge_role_93949915 labeltooltip="1 [when: 'nfs' in kubeinit_cluster_hostvars.services]" tooltip="1 [when: 'nfs' in kubeinit_cluster_hostvars.services]"]
+					role_e2c4f449 [label="[role] Delegate to distro role to run post-deployment tasks" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/post_deployment.yml" color="#a95123" id=role_e2c4f449 tooltip="Delegate to distro role to run post-deployment tasks"]
+					role_e2c4f449 -> role_14a1720f [label="1 [when: 'nfs' in kubeinit_cluster_hostvars.services]" color="#a95123" fontcolor="#a95123" id=edge_role_14a1720f labeltooltip="1 [when: 'nfs' in kubeinit_cluster_hostvars.services]" tooltip="1 [when: 'nfs' in kubeinit_cluster_hostvars.services]"]
 					subgraph "Configure NFS" {
-						role_93949915 [label="[role] Configure NFS" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/post_deployment_tasks.yml" color="#6303c9" id=role_93949915 tooltip="Configure NFS"]
+						role_14a1720f [label="[role] Configure NFS" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/post_deployment_tasks.yml" color="#a95123" id=role_14a1720f tooltip="Configure NFS"]
 					}
-					role_6a7a0cbc -> role_b311d06a [label="2 [when: 'apps' in kubeinit_cluster_hostvars.services]" color="#6303c9" fontcolor="#6303c9" id=edge_role_b311d06a labeltooltip="2 [when: 'apps' in kubeinit_cluster_hostvars.services]" tooltip="2 [when: 'apps' in kubeinit_cluster_hostvars.services]"]
+					role_e2c4f449 -> role_710762b5 [label="2 [when: 'apps' in kubeinit_cluster_hostvars.services]" color="#a95123" fontcolor="#a95123" id=edge_role_710762b5 labeltooltip="2 [when: 'apps' in kubeinit_cluster_hostvars.services]" tooltip="2 [when: 'apps' in kubeinit_cluster_hostvars.services]"]
 					subgraph "Deploy the apps" {
-						role_b311d06a [label="[role] Deploy the apps" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/post_deployment_tasks.yml" color="#6303c9" id=role_b311d06a tooltip="Deploy the apps"]
+						role_710762b5 [label="[role] Deploy the apps" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/post_deployment_tasks.yml" color="#a95123" id=role_710762b5 tooltip="Deploy the apps"]
 					}
-					role_6a7a0cbc -> role_121719cc [label="3 [when: 'kubevirt' in (kubeinit_cluster_hostvars['post_deployment_services'] | default([]))]" color="#6303c9" fontcolor="#6303c9" id=edge_role_121719cc labeltooltip="3 [when: 'kubevirt' in (kubeinit_cluster_hostvars['post_deployment_services'] | default([]))]" tooltip="3 [when: 'kubevirt' in (kubeinit_cluster_hostvars['post_deployment_services'] | default([]))]"]
+					role_e2c4f449 -> role_e238ea09 [label="3 [when: 'kubevirt' in (kubeinit_cluster_hostvars['post_deployment_services'] | default([]))]" color="#a95123" fontcolor="#a95123" id=edge_role_e238ea09 labeltooltip="3 [when: 'kubevirt' in (kubeinit_cluster_hostvars['post_deployment_services'] | default([]))]" tooltip="3 [when: 'kubevirt' in (kubeinit_cluster_hostvars['post_deployment_services'] | default([]))]"]
 					subgraph "Deploy KubeVirt" {
-						role_121719cc [label="[role] Deploy KubeVirt" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/post_deployment_tasks.yml" color="#6303c9" id=role_121719cc tooltip="Deploy KubeVirt"]
+						role_e238ea09 [label="[role] Deploy KubeVirt" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/post_deployment_tasks.yml" color="#a95123" id=role_e238ea09 tooltip="Deploy KubeVirt"]
 					}
-					role_6a7a0cbc -> role_3c60ba7b [label="4 " color="#6303c9" fontcolor="#6303c9" id=edge_role_3c60ba7b labeltooltip="4 " tooltip="4 "]
+					role_e2c4f449 -> role_7916e133 [label="4 " color="#a95123" fontcolor="#a95123" id=edge_role_7916e133 labeltooltip="4 " tooltip="4 "]
 					subgraph "Deploy extra roles" {
-						role_3c60ba7b [label="[role] Deploy extra roles" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/post_deployment_tasks.yml" color="#6303c9" id=role_3c60ba7b tooltip="Deploy extra roles"]
+						role_7916e133 [label="[role] Deploy extra roles" URL="/home/runner/.ansible/collections/ansible_collections/kubeinit/kubeinit/roles/kubeinit_openshift/tasks/post_deployment_tasks.yml" color="#a95123" id=role_7916e133 tooltip="Deploy extra roles"]
 					}
 				}
 			}
